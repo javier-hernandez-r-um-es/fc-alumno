@@ -1,0 +1,11 @@
+<HTML>
+<HEAD>
+	<TITLE>Mi primera Web en FUndamentos de Computadores</TITLE>
+</HEAD>
+<BODY>
+<P>Mi nombre es:<B>Javier Hern&aacute;ndez Rosique</B></P>
+<P>Mi DNI es<I>49448030P</I></P>
+<BR>
+<P>El pa&iacute;s es:<A HREF="https://es.wikipedia.org/wiki/Tanzania">Tanzania</A></P>
+</BODY>
+</HTML>
