@@ -1,0 +1,318 @@
+Script started on 2022-09-25 11:47:09+02:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="80" LINES="24"]
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ ### PRÁCTICA 2 ###
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ git config --global --list
+[?2004l[?1h=user.name=Javier Hernández Rosique[m
+user.email=javier-hernandezr-um-es[m
+[K[?1l>[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ git ci[Konfig --[K[K[K[K[K[K[K[K[K[K[K[K[KcAT[K[Kat 4[K$HOME/.GI[K[Kgitconfig
+[?2004l[user]
+	name = Javier Hernández Rosique
+	email = javier-hernandezr-um-es
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ rkdir FC-alumno/
+[?2004lOrden «rkdir» no encontrada. Quizá quiso decir:
+  la orden «mkdir» del paquete deb «coreutils (8.32-4.1ubuntu1)»
+  la orden «rmdir» del paquete deb «coreutils (8.32-4.1ubuntu1)»
+  la orden «redir» del paquete deb «redir (3.3-1)»
+Pruebe con: sudo apt install <nombre del paquete deb>
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ rmdir FC-alumno/
+[?2004lrmdir: fallo al borrar 'FC-alumno/': El directorio no está vacío
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ cd Fc[KC-alumno/
+[?2004l[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ ls
+[?2004l[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ ls -l
+[?2004ltotal 0
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ cd
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ mkdir FC
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ LS
+[?2004lLS: orden no encontrada
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDescargas[0m   [01;34mFC[0m         [01;34mMúsica[0m      [01;34mPúblico[0m     typescript3        [01;34mVídeos[0m
+[01;34mDocumentos[0m  [01;34mFC-alumno[0m  [01;34mPlantillas[0m  [01;34msnap[0m        typescript.clean
+[01;34mEscritorio[0m  [01;34mImágenes[0m   [01;34mPRACTICAS[0m   typescript  typescript-pract2
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ git clone [7mhttps://github.com/javier-hernandez-r-um-es/FC[27m[7m-[27m[7mAlumno.git[27m[A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[Chttps://github.com/javier-hernandez-r-um-es/FC-Alumno.git
+[?2004lClonando en 'FC-Alumno'...
+Username for 'https://github.com': javier-hernandez-r-um-es
+Password for 'https://javier-hernandez-r-um-es@github.com': 
+warning: Pareces haber clonado un repositorio sin contenido.
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ NANO[K[K[K[Knano.pat .pat[C[C[C[C
+[?2004l[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;32H(B[0;7m[ Archivo nuevo ](B[m[H(B[0;7m  GNU nano 6.2                          .pat                                    [1;79H(B[m[23d(B[0;7m^G(B[m Ayuda     (B[0;7m^O(B[m Guardar   (B[0;7m^W(B[m Buscar    (B[0;7m^K(B[m Cortar    (B[0;7m^T(B[m Ejecutar  (B[0;7m^C(B[m Ubicación[24d(B[0;7m^X(B[m Salir     (B[0;7m^R(B[m Leer fich.(B[0;7m^\(B[m Reemplazar(B[0;7m^U(B[m Pegar     (B[0;7m^J(B[m Justificar(B[0;7m^/(B[m Ir a línea[2d[?12l[?25h[?25l[1;46H(B[0;7m*[22d(B[m[K[1;79H[2d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[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m Formato DOS     (B[0;7mM-A(B[m Añadir          (B[0;7mM-B(B[m Respaldar ficher[24;2H(B[0;7mC(B[m Cancelar         (B[0;7mM-M(B[m Formato Mac     (B[0;7mM-P(B[m Anteponer       (B[0;7m^T(B[m Navegar[K[22d(B[0;7mNombre del archivo a escribir: .pat                                             [22;36H(B[m[?12l[?25h[?25l[31G[1K (B[0;7m[ Escribiendo... ](B[m[K[1;46H(B[0;7m [79G(B[m[22;31H(B[0;7m[ 1 línea escrita ](B[m[23;14H(B[0;7m^O(B[m Guardar   (B[0;7m^W(B[m Buscar    (B[0;7m^K(B[m Cortar    (B[0;7m^T(B[m Ejecutar  (B[0;7m^C(B[m Ubicación[K[24;2H(B[0;7mX(B[m Salir     (B[0;7m^R(B[m Leer fich.(B[0;7m^\(B[m Reemplazar(B[0;7m^U(B[m Pegar     (B[0;7m^J(B[m Justificar(B[0;7m^/(B[m Ir a línea[?12l[?25h[2;41H[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ ls -la
+[?2004ltotal 384
+drwxr-x--- 20 javihernandezr javihernandezr   4096 sep 25 11:59 [0m[01;34m.[0m
+drwxr-xr-x  3 root           root             4096 sep  9 18:08 [01;34m..[0m
+-rw-------  1 javihernandezr javihernandezr   3281 sep 25 11:46 .bash_history
+-rw-r--r--  1 javihernandezr javihernandezr    220 sep  9 18:08 .bash_logout
+-rw-r--r--  1 javihernandezr javihernandezr   3771 sep  9 18:08 .bashrc
+drwx------ 12 javihernandezr javihernandezr   4096 sep 19 19:35 [01;34m.cache[0m
+drwx------ 14 javihernandezr javihernandezr   4096 sep 19 19:07 [01;34m.config[0m
+drwxr-xr-x  2 javihernandezr javihernandezr   4096 sep  9 18:54 [01;34mDescargas[0m
+drwxr-xr-x  2 javihernandezr javihernandezr   4096 sep  9 18:33 [01;34mDocumentos[0m
+drwxr-xr-x  3 javihernandezr javihernandezr   4096 sep 15 14:21 [01;34mEscritorio[0m
+drwxrwxr-x  2 javihernandezr javihernandezr   4096 sep 25 11:50 [01;34mFC[0m
+drwxrwxr-x  3 javihernandezr javihernandezr   4096 sep 25 11:24 [01;34mFC-alumno[0m
+drwxrwxr-x  3 javihernandezr javihernandezr   4096 sep 25 11:52 [01;34mFC-Alumno[0m
+-rw-rw-r--  1 javihernandezr javihernandezr     74 sep 25 11:03 .gitconfig
+drwx------  2 javihernandezr javihernandezr   4096 sep 20 19:05 [01;34m.gnupg[0m
+drwxr-xr-x  2 javihernandezr javihernandezr   4096 sep  9 18:33 [01;34mImágenes[0m
+-rw-------  1 javihernandezr javihernandezr     20 sep 25 11:47 .lesshst
+drwx------  3 javihernandezr javihernandezr   4096 sep  9 18:33 [01;34m.local[0m
+drwxr-xr-x  2 javihernandezr javihernandezr   4096 sep  9 18:33 [01;34mMúsica[0m
+-rw-rw-r--  1 javihernandezr javihernandezr     41 sep 25 11:59 .pat
+drwxr-xr-x  2 javihernandezr javihernandezr   4096 sep  9 18:33 [01;34mPlantillas[0m
+drwxrwxr-x  3 javihernandezr javihernandezr   4096 sep 15 13:16 [01;34mPRACTICAS[0m
+-rw-r--r--  1 javihernandezr javihernandezr    807 sep  9 18:08 .profile
+drwxr-xr-x  2 javihernandezr javihernandezr   4096 sep  9 18:33 [01;34mPúblico[0m
+drwx------  4 javihernandezr javihernandezr   4096 sep 15 13:32 [01;34msnap[0m
+drwx------  2 javihernandezr javihernandezr   4096 sep 15 12:30 [01;34m.ssh[0m
+-rw-r--r--  1 javihernandezr javihernandezr      0 sep 15 12:55 .sudo_as_admin_successful
+-rw-rw-r--  1 javihernandezr javihernandezr  19513 sep 19 20:06 typescript
+-rw-rw-r--  1 javihernandezr javihernandezr 237031 sep 23 13:09 typescript3
+-rw-rw-r--  1 javihernandezr javihernandezr  10001 sep 23 12:58 typescript.clean
+-rw-rw-r--  1 javihernandezr javihernandezr   4096 sep 25 11:59 typescript-pract2
+drwxr-xr-x  2 javihernandezr javihernandezr   4096 sep  9 18:33 [01;34mVídeos[0m
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ ls -lanano .patgit clone https://github.com/javier-hernandez-r-um-es/FC-Alumno.git[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd FC
+[?2004l[?2004h]0;javihernandezr@jabox: ~/FC[01;32mjavihernandezr@jabox[00m:[01;34m~/FC[00m$ LS[K[Kls .git
+[?2004lls: no se puede acceder a '.git': No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: ~/FC[01;32mjavihernandezr@jabox[00m:[01;34m~/FC[00m$ cd F[K[K[K[KLS[K[Kls
+[?2004l[?2004h]0;javihernandezr@jabox: ~/FC[01;32mjavihernandezr@jabox[00m:[01;34m~/FC[00m$ cd ..[K[K
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ cd FC
+FC/        FC-alumno/ FC-Alumno/ 
+]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ cd FC
+FC/        FC-alumno/ FC-Alumno/ 
+]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ cd FC-
+FC-alumno/ FC-Alumno/ 
+]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ cd FC-alumno/
+[?2004l[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ ls -la
+[?2004ltotal 12
+drwxrwxr-x  3 javihernandezr javihernandezr 4096 sep 25 11:24 [0m[01;34m.[0m
+drwxr-x--- 20 javihernandezr javihernandezr 4096 sep 25 11:59 [01;34m..[0m
+drwxrwxr-x  8 javihernandezr javihernandezr 4096 sep 15 14:16 [01;34m.git[0m
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ ls .git
+[?2004l[0m[01;34mbranches[0m        config       HEAD   index  [01;34mlogs[0m     [01;34mrefs[0m
+COMMIT_EDITMSG  description  [01;34mhooks[0m  [01;34minfo[0m   [01;34mobjects[0m
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ cat .git/config
+[?2004l[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/javierhernandezrumes/FC-alumno.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ echo README.md-README.mdeREADME.md README.md#README.md README.mdFREADME.mdCREADME.md\README.mdNREADME.md\README.md[1PREADME.md[1PREADME.mdnREADME.md\README.mdnREADME.md-README.md README.mdAREADME.md[1PREADME.mdJREADME.mdaREADME.mdvREADME.mdiREADME.mdeREADME.mdrREADME.md README.mdHREADME.mdeREADME.mdrREADME.mdnREADME.mdaREADME.mdnREADME.mddREADME.mdeREADME.mdzREADME.md"README.md[1@![1P[C[1@"[C[C[C[C[C[C[1P[1@C-\n\n- Javier Hernandez"README.md [A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[CA\n\n- Javier Hernandez"README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[CL\n\n- Javier Hernandez"README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CU\n\n- Javier Hernandez"README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CM\n\n- Javier Hernandez"README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CN\n\n- Javier Hernandez"README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CO\n\n- Javier Hernandez"README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\n\n- Javier Hernandez"READM[1PE.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\n\n- Javier Hernandez"README[1P.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\n\n- Javier Hernandez"README.[1Pmd[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\n\n- Javier Hernandez"README.m[1Pd[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\n\n- Javier Hernandez"README.md[K[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\n\n- Javier Hernandez"README.md [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca\n\n- Javier Hernandez"README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl\n\n- Javier Hernandez"README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu\n\n- Javier Hernandez"README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm\n\n- Javier Hernandez"README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn\n\n- Javier Hernandez"README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co\n\n- Javier Hernandez"README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\n\n- Javier Hernandez"READM[1PE.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\n\n- Javier Hernandez"README[1P.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\n\n- Javier Hernandez"README.[1Pmd[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\n\n- Javier Hernandez"README.m[1Pd[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\n\n- Javier Hernandez"README.md[K[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\n\n- Javier Hernandez"README.md [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C README.md [A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C d[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C>README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C README.md[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git add RW¡[K[KEADME.MD[K[Kmd
+[?2004l[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git commit -m "Creacion de [K[K[K[K[K[Kón de RADME.mdeADME.md[1PeADME.mdReADME.md[C[1PADME.mdEADME.md[C[C[C[C[C[C[C"
+[?2004l[main d0e5881] Creación de README.md
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ GIT [K[K[K[Kgit push --set-upstream origin main
+[?2004lUsername for 'https://github.com': javier	-hernane dez-r-um-es
+Password for 'https://javier-hernandez-r-um-es@github.com': 
+remote: Repository not found.
+fatal: repositorio 'https://github.com/javierhernandezrumes/FC-alumno.git/' no encontrado
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [K]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [K]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git config list[C-list-list[C[C[C[C[C[C[C --list- --list- --listg --listl --listo --listb --lista --listl --list
+[?2004l[?1h=user.name=Javier Hernández Rosique[m
+user.email=javier-hernandezr-um-es[m
+[K[?1l>[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ x[Kcat $FC-alumno/.gitconfig
+[?2004lcat: opción incorrecta -- «a»
+Pruebe 'cat --help' para más información.
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [7mcat .git/config[27mcat .git/config
+[?2004l[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/javierhernandezrumes/FC-alumno.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ remote [K[K[K[K[K[K[K## Me tengo que instalar la orden de remote dem¡[K[Kbido a que cambie el[K[Kel nombre de usuario y al poner el [7mcat .git[27m[7m/[27m[7mconfig[27m[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat .git/config me aparece mi antiguo nombre de usuario
+[?2004l[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git remote -v
+[?2004lorigin	https://github.com/javierhernandezrumes/FC-alumno.git (fetch)
+origin	https://github.com/javierhernandezrumes/FC-alumno.git (push)
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git remote set-url[K[K[Kjavierhernandezrumes[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mhttps://github.com/javierhernandezrumes/FC-alumno.git[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://github.com/javierhernandezrumes/FC-alumno.git 
+[?2004lerror: Sub-comando desconocido: set-https://github.com/javierhernandezrumes/FC-alumno.git
+uso: git remote [-v | --verbose]
+   o: git remote add [-t <rama>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <nombre> <url>
+   o: git remote rename <viejo> <nuevo>
+   o: git remote remove <nombre>
+   o: git remote set-head <nombre> (-a | --auto | -d | --delete | <rama>)
+   o: git remote [-v | --verbose] show [-n] <nombre>
+   o: git remote prune [-n | --dry-run] <nombre>
+   o: git remote [-v | --verbose] update [-p | --prune] [(<grupo> | <remoto>)...]
+   o: git remote set-branches [--add] <nombre> <rama>...
+   o: git remote get-url [--push] [--all] <nombre>
+   o: git remote set-url [--push] <nombre> <nuevo-url> [<viejo-url>]
+   o: git remote set-url --add <nombre> <nuevo-url>
+   o: git remote set-url --delete <nombre> <url>
+
+    -v, --verbose         ser verboso; tiene que ser agregado antes de un subcomando
+
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git remote set-https://github.com/javierhernandezrumes/FC-alumno.git gi[K[K>[K>[K[C[C[C o r i g i n [C [7mhttps://github.com/javierhernan[27m[7md[27m[7mezrumes/FC-alumno.git[27m [A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://github.com/javierhernand[1@ezrumes/FC-alumno.git [1@-[C[1@-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[1@-[1P[C[1@-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-hernan[1@d[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004lerror: Sub-comando desconocido: set-https://github.com/javierhernandezrumes/FC-alumno.git
+uso: git remote [-v | --verbose]
+   o: git remote add [-t <rama>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <nombre> <url>
+   o: git remote rename <viejo> <nuevo>
+   o: git remote remove <nombre>
+   o: git remote set-head <nombre> (-a | --auto | -d | --delete | <rama>)
+   o: git remote [-v | --verbose] show [-n] <nombre>
+   o: git remote prune [-n | --dry-run] <nombre>
+   o: git remote [-v | --verbose] update [-p | --prune] [(<grupo> | <remoto>)...]
+   o: git remote set-branches [--add] <nombre> <rama>...
+   o: git remote get-url [--push] [--all] <nombre>
+   o: git remote set-url [--push] <nombre> <nuevo-url> [<viejo-url>]
+   o: git remote set-url --add <nombre> <nuevo-url>
+   o: git remote set-url --delete <nombre> <url>
+
+    -v, --verbose         ser verboso; tiene que ser agregado antes de un subcomando
+
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git remote set-https://github.com/javierhernandezrumes/FC-alumno.git origin https://github.com/javier-hernandez-r-um-es/FC-alumno.git  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernand[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernande[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernandez[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernandez-[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernandez-r[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernandez-r-[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernandez-r-u[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernandez-r-um[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernandez-r-um-[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernandez-r-um-e[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernandez-r-um-es[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernandez-r-um-es/[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernandez-r-um-es/F[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernandez-r-um-es/FC[1P[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/FC-alumno.git [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin https://github.com/javier-hernandez-r-um-es/FC-alumno.git  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cuhttps://github.com/javierhernandezrumes origin https://github.com/javier-hernandez-r-um-es/F[1@C[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crhttps://github.com/javierhernandezrumes origin https://github.com/javier-hernandez-r-um-es/[1@F[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clhttps://github.com/javierhernandezrumes origin https://github.com/javier-hernandez-r-um-es[1@/[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C https://github.com/javierhernandezrumes origin https://github.com/javier-hernandez-r-um-e[1@s[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/ origin https://github.com/javier-hernandez-r-um-[1@e[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CF origin https://github.com/javier-hernandez-r-um[1@-[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CC origin https://github.com/javier-hernandez-r-u[1@m[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- origin https://github.com/javier-hernandez-r-[1@u[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca origin https://github.com/javier-hernandez-r[1@-[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl origin https://github.com/javier-hernandez-[1@r[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu origin https://github.com/javier-hernandez[1@-[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm origin https://github.com/javier-hernande[1@z[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn origin https://github.com/javier-hernand[1@e[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co origin https://github.com/javier-hernan[1@d[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C. origin https://github.com/javier-herna[1@n[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg origin https://github.com/javier-hern[1@a[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci origin https://github.com/javier-her[1@n[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct origin https://github.com/javier-he[1@r[A]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004lerror: No existe el remoto 'https://github.com/javierhernandezrumes/FC-alumno.git'
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git remote set-url https://github.com/javierhernandezrumes/FC-alumno.git origin https://github.com/javier-hernandez-r-um-es/FC-alumno.git  [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[C[C[1@ [1@o[1@r[1@i[1@g[1@i[1@n[C[1@ [1P[1P[C[1P[1P[1P[1P[1P[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P [7mhttps://github.com/javier-hernandez-r-um-es/FC-alumno.git [27m [1@https://github.com/javier-hernandez-r-um-es/FC-alumno.git  
+[?2004l[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git remote -v
+[?2004lorigin	https://github.com/javier-hernandez-r-um-es/FC-alumno.git (fetch)
+origin	https://github.com/javier-hernandez-r-um-es/FC-alumno.git (push)
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git push --set-upstream oru[Kigiin[K[Kn main
+[?2004lUsername for 'https://github.com': javier-hernandez-r-um-es
+Password for 'https://javier-hernandez-r-um-es@github.com': 
+Enumerando objetos: 6, listo.
+Contando objetos:  16% (1/6)Contando objetos:  33% (2/6)Contando objetos:  50% (3/6)Contando objetos:  66% (4/6)Contando objetos:  83% (5/6)Contando objetos: 100% (6/6)Contando objetos: 100% (6/6), listo.
+Comprimiendo objetos:  33% (1/3)Comprimiendo objetos:  66% (2/3)Comprimiendo objetos: 100% (3/3)Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos:  16% (1/6)Escribiendo objetos:  33% (2/6)Escribiendo objetos:  50% (3/6)Escribiendo objetos:  66% (4/6)Escribiendo objetos:  83% (5/6)Escribiendo objetos: 100% (6/6)Escribiendo objetos: 100% (6/6), 537 bytes | 537.00 KiB/s, listo.
+Total 6 (delta 0), reusados 0 (delta 0), pack-reusados 0
+remote: This repository moved. Please use the new location:[K
+remote:   https://github.com/javier-hernandez-r-um-es/FC-Alumno.git[K
+To https://github.com/javier-hernandez-r-um-es/FC-alumno.git
+ * [new branch]      main -> main
+Rama 'main' configurada para hacer seguimiento a la rama remota 'main' de 'origin'.
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ nano README.md 
+[?2004l[?2004h[?1049h[22;0;0t[1;36r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[34;64H(B[0;7m[ Leyendo... ](B[m[34;62H(B[0;7m[ 3 líneas leídas ](B[m[H(B[0;7m  GNU nano 6.2                                                      README.md                                                                [1;140H(B[m[35d(B[0;7m^G(B[m Ayuda[16G(B[0;7m^O(B[m Guardar     (B[0;7m^W(B[m Buscar[46G(B[0;7m^K(B[m Cortar[61G(B[0;7m^T(B[m Ejecutar    (B[0;7m^C(B[m Ubicación   (B[0;7mM-U(B[m Deshacer   (B[0;7mM-A(B[m Poner marca(B[0;7mM-](B[m A llave[36d(B[0;7m^X(B[m Salir[16G(B[0;7m^R(B[m Leer fich.  (B[0;7m^\(B[m Reemplazar  (B[0;7m^U(B[m Pegar[61G(B[0;7m^J(B[m Justificar  (B[0;7m^/(B[m Ir a línea  (B[0;7mM-E(B[m Rehacer    (B[0;7mM-6(B[m Copiar     (B[0;7m^Q(B[m Buscar atrás[2d(B[0;1m[33m# FC[4d[35m- [39m(B[mJavier Hernandez[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25hJ[?25l[?12l[?25ha[?25l[?12l[?25hv[?25l[?12l[?25hi[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25h [?25l[?12l[?25hH[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25hn[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hd[?25l[?12l[?25he[?25l[34d[K[?12l[?25h[4;19H[?25l[1;79H(B[0;7m*[140G(B[m[?12l[?25h[4;20H[?25l[?12l[?25hr[?25l[?12l[?25hO[?25l[?12l[?25hS[?25l[?12l[?25hI[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hR[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25hi[?25l[?12l[?25hq[?25l[?12l[?25hu[?25l[?12l[?25he[?25l[34d(B[0;7m¿Guardar el búfer modificado?                                                                                                                [35;1H S(B[m Sí[K[36d(B[0;7m N(B[m No   [16G (B[0;7m^C(B[m Cancelar[K[34;31H[?12l[?25h[?25l[35d(B[0;7m^G(B[m Ayuda[35;36H(B[0;7mM-D(B[m Formato DOS[35;71H(B[0;7mM-A(B[m Añadir[35;106H(B[0;7mM-B(B[m Respaldar fichero[36d(B[0;7m^C(B[m Cancelar[14X[36;26H  [36;36H(B[0;7mM-M(B[m Formato Mac[36;71H(B[0;7mM-P(B[m Anteponer[36;106H(B[0;7m^T(B[m Navegar[34d(B[0;7mNombre del archivo a escribir: README.md(B[m[?12l[?25h[?25l[34;61H[1K (B[0;7m[ Escribiendo... ](B[m[K[1;79H(B[0;7m [140G(B[m[34;61H(B[0;7m[ 3 líneas escritas ](B[m[J[36d[?12l[?25h[36;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git status
+[?2004lEn la rama main
+Tu rama está actualizada con 'origin/main'.
+
+Cambios no rastreados para el commit:
+  (usa "git add/rm <archivo>..." para actualizar a lo que se le va a hacer commit)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+	[31mborrados:        README[m
+	[31mmodificados:     README.md[m
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git diff
+[?2004l[?1h=[1mdiff --git a/README b/README[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex 892eb49..0000000[m[m
+[1m--- a/README[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1 +0,0 @@[m[m
+[31m-Javier Hernandez[m[m
+[1mdiff --git a/README.md b/README.md[m[m
+[1mindex 01f6bf2..b2a08e5 100644[m[m
+[1m--- a/README.md[m[m
+[1m+++ b/README.md[m[m
+[36m@@ -1,3 +1,3 @@[m[m
+ # FC[m[m
+ [m[m
+[31m-- Javier Hernandez[m[m
+[32m+[m[32m- Javier Hernandez Rosique[m[m
+[K[?1l>[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ touch hello.txt
+[?2004l[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git status
+[?2004lEn la rama main
+Tu rama está actualizada con 'origin/main'.
+
+Cambios no rastreados para el commit:
+  (usa "git add/rm <archivo>..." para actualizar a lo que se le va a hacer commit)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+	[31mborrados:        README[m
+	[31mmodificados:     README.md[m
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+	[31mhello.txt[m
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git add -A
+[?2004l[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git status
+[?2004lEn la rama main
+Tu rama está actualizada con 'origin/main'.
+
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+	[32mborrados:        README[m
+	[32mmodificados:     README.md[m
+	[32mnuevos archivos: hello.txt[m
+
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git t[Krestore .[K--staged hello.txt
+[?2004l[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git status
+[?2004lEn la rama main
+Tu rama está actualizada con 'origin/main'.
+
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+	[32mborrados:        README[m
+	[32mmodificados:     README.md[m
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+	[31mhello.txt[m
+
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git clean .[K-n
+[?2004lSerá borrado hello.txt
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git clean -f
+[?2004lBorrando hello.txt
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git status
+[?2004lEn la rama main
+Tu rama está actualizada con 'origin/main'.
+
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+	[32mborrados:        README[m
+	[32mmodificados:     README.md[m
+
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git commi -m[Ct -m[C[C[C "README modificado con se[K[K[K[K[K[Kcon el segundo apellido"
+[?2004l[main be4cec3] README modificado con el segundo apellido
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+ delete mode 100644 README
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git t[Kd[Kstatus
+[?2004lEn la rama main
+Tu rama está adelantada a 'origin/main' por 1 commit.
+  (usa "git push" para publicar tus commits locales)
+
+nada para hacer commit, el árbol de trabajo está limpio
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git push origin main
+[?2004lUsername for 'https://github.com': javier-hernandez-r-um-es
+Password for 'https://javier-hernandez-r-um-es@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Autenticación falló para 'https://github.com/javier-hernandez-r-um-es/FC-alumno.git/'
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ git push origin main
+[?2004lUsername for 'https://github.com': javier-hernandez-r-um-es
+Password for 'https://javier-hernandez-r-um-es@github.com': 
+Enumerando objetos: 5, listo.
+Contando objetos:  20% (1/5)Contando objetos:  40% (2/5)Contando objetos:  60% (3/5)Contando objetos:  80% (4/5)Contando objetos: 100% (5/5)Contando objetos: 100% (5/5), listo.
+Comprimiendo objetos: 100% (1/1)Comprimiendo objetos: 100% (1/1), listo.
+Escribiendo objetos:  33% (1/3)Escribiendo objetos:  66% (2/3)Escribiendo objetos: 100% (3/3)Escribiendo objetos: 100% (3/3), 322 bytes | 322.00 KiB/s, listo.
+Total 3 (delta 0), reusados 0 (delta 0), pack-reusados 0
+remote: This repository moved. Please use the new location:[K
+remote:   https://github.com/javier-hernandez-r-um-es/FC-Alumno.git[K
+To https://github.com/javier-hernandez-r-um-es/FC-alumno.git
+   d0e5881..be4cec3  main -> main
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ st[K[KGIT [K[K[K[Kgit status
+[?2004lEn la rama main
+Tu rama está actualizada con 'origin/main'.
+
+nada para hacer commit, el árbol de trabajo está limpio
+[?2004h]0;javihernandezr@jabox: ~/FC-alumno[01;32mjavihernandezr@jabox[00m:[01;34m~/FC-alumno[00m$ exit
+[?2004lexit
+
+Script done on 2022-09-25 12:51:55+02:00 [COMMAND_EXIT_CODE="0"]
