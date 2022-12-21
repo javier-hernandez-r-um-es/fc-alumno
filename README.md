@@ -1,3 +1,0 @@
-# FC
-
-- Javier Hernandez Rosique
