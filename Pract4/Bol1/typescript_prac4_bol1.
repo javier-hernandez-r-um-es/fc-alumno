@@ -1,0 +1,626 @@
+Script started on 2022-11-06 17:34:37+01:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ # EJERCICIO 1 #
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ LS[K[Kls
+[?2004l[0m[01;34mDescargas[0m   [01;34mGrabacionesclases[0m  practica4.pdf  [01;34msnap[0m                    [01;34mVídeos[0m
+[01;34mDocumentos[0m  [01;34mImágenes[0m           [34;42mprueba[0m         [01;34mtmp[0m
+[01;34mEscritorio[0m  [01;34mMúsica[0m             [01;34mPúblico[0m        token
+[01;34mfc-alumno[0m   [01;34mPlantillas[0m         README.md      typescript_prac4_bol1.
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ cd[K[Kmkdir /tmp/tutorial
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ cd mkdir /tmp/tutorial[C[C[1P[1P[1P[1P[1P /tmp/tutorialc /tmp/tutoriald /tmp/tutorial
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mkdir dir1 dir2 dir 3
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ pwd
+[?2004l/tmp/tutorial
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mkdir
+[?2004lmkdir: falta un operando
+Pruebe 'mkdir --help' para más información.
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cd /etc $[K~/d[Ke[Ke[K[K/e[KEscritorio/
+[?2004lbash: cd: demasiados argumentos
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ LS[K[Kls
+[?2004l[0m[01;34m3[0m  [01;34mdir[0m  [01;34mdir1[0m  [01;34mdir2[0m
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ rm -r 3
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004l[0m[01;34mdir[0m  [01;34mdir1[0m  [01;34mdir2[0m
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mkdir -p dir4/dir5/dir6
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004l[0m[01;34mdir[0m  [01;34mdir1[0m  [01;34mdir2[0m  [01;34mdir4[0m
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cd dir 4[K[K4
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial/dir4[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial/dir4[00m$ ls
+[?2004l[0m[01;34mdir5[0m
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial/dir4[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial/dir4[00m$ cd dir 5[K[K5
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial/dir4/dir5[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial/dir4/dir5[00m$ ls
+[?2004l[0m[01;34mdir6[0m
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial/dir4/dir5[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial/dir4/dir5[00m$ cd ..
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial/dir4[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial/dir4[00m$ cd ..
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ k[Kmkdir otra carpeta
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004l[0m[01;34mcarpeta[0m  [01;34mdir[0m  [01;34mdir1[0m  [01;34mdir2[0m  [01;34mdir4[0m  [01;34motra[0m
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ # carpeta [K[K[K[K[K[K[K[Kel directorio carpeta se encuentra dentro  del directorio otra
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [7mmkdir "carpeta 1"[27m
+[7mmkdir "carpeta 2[27m
+[7mmkdir carpeta\[27m[A[A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mkdir "carpeta 1"
+mkdir "carpeta 2
+[1Pmkdir carpeta[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [7mmkdir "carpeta 1"[27m
+[7mmkdir "carpeta 2[27m
+[7mmkdir carpeta\[27m[A[A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mkdir "carpeta 1"
+mkdir "carpeta 2
+[1Pmkdir carpeta[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmkdir "carpeta 1"[K[K2
+[?2004l[?2004h> 
+[?2004l[?2004h> q[Kx[Khola
+[?2004l[?2004h> qqqqq[K[K[K[K[Kq[K
+carpeta/   carpeta 1/ dir/       dir1/      dir2/      dir4/      otra/
+> 
+carpeta/   carpeta 1/ dir/       dir1/      dir2/      dir4/      otra/
+> ^C[?2004l[?2004h[?2004l
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mkdir carpetaª[K\ 3
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mkdir "carpeta 4" "carpeta 5"
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mkdir -p "carpeta 6"/"carpeta 7"
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004l [0m[01;34mcarpeta[0m     [01;34m'carpeta 3'[0m  [01;34m'carpeta 5'[0m   [01;34mdir[0m    [01;34mdir2[0m   [01;34motra[0m
+[01;34m'carpeta 1'[0m  [01;34m'carpeta 4'[0m  [01;34m'carpeta 6'[0m   [01;34mdir1[0m   [01;34mdir4[0m
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ñ[Kls > salida.txt
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004l [0m[01;34mcarpeta[0m     [01;34m'carpeta 3'[0m  [01;34m'carpeta 5'[0m   [01;34mdir[0m    [01;34mdir2[0m   [01;34motra[0m
+[01;34m'carpeta 1'[0m  [01;34m'carpeta 4'[0m  [01;34m'carpeta 6'[0m   [01;34mdir1[0m   [01;34mdir4[0m   salida.txt
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat salida.txt
+[?2004lcarpeta
+carpeta 1
+carpeta 3
+carpeta 4
+carpeta 5
+carpeta 6
+dir
+dir1
+dir2
+dir4
+otra
+salida.txt
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ echo "Esto es una prueba"
+[?2004lEsto es una prueba
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ echo "Esto es una prueba" > test_1.txt
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ echo "Esto es una prueba" > test_1.txt[1@ [1P[C[C[1@ [1@s[1@e[1@g[1@un prueba" > test_1.txt [A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd prueba" > test_1.txt[A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca prueba" > test_1.txt[A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1.txt[1P [A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1.txt [K[A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C21.txt [A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.txt [K[A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct2.txt [A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_2.txt [A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ echo "Esto es una segunda prueba" > test_2.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.txt[1P [A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3.txt [A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ nano test_3.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Leyendo... ](B[m[22;32H(B[0;7m[ 1 línea leída ](B[m[H(B[0;7m  GNU nano 6.2                       test_3.txt                                 [1;79H(B[m[23d(B[0;7m^G(B[m Ayuda     (B[0;7m^O(B[m Guardar   (B[0;7m^W(B[m Buscar    (B[0;7m^K(B[m Cortar    (B[0;7m^T(B[m Ejecutar  (B[0;7m^C(B[m Ubicación[24d(B[0;7m^X(B[m Salir     (B[0;7m^R(B[m Leer fich.(B[0;7m^\(B[m Reemplazar(B[0;7m^U(B[m Pegar     (B[0;7m^J(B[m Justificar(B[0;7m^/(B[m Ir a línea[2dEsto es una segunda prueba[?12l[?25h[?25l[?12l[?25hE[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25he[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hu[?25l[?12l[?25hn[?25l[?12l[?25ha[?25l[?12l[?25h [?25l[?12l[?25hs[?25l[?12l[?25he[?25l[?12l[?25hg[?25l[?12l[?25hu[?25l[?12l[?25hn[?25l[?12l[?25hd[?25l[?12l[?25ha[?25l[1;49H(B[0;7m*[22d(B[m[K[1;79H[?12l[?25h[2;19H[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25ht prueba[14G[?25l[?12l[?25he prueba[15G[?25l[?12l[?25hr prueba[16G[?25l[?12l[?25hc prueba[17G[?25l[?12l[?25he prueba[18G[?25l[?12l[?25hr prueba[19G[?25l[?12l[?25ha prueba[20G[?25l[?12l[?25h  prueba[21G[?25l[23;14H       (B[0;7mM-D(B[m Formato DOS     (B[0;7mM-A(B[m Añadir          (B[0;7mM-B(B[m Respaldar ficher[24;2H(B[0;7mC(B[m Cancelar         (B[0;7mM-M(B[m Formato Mac     (B[0;7mM-P(B[m Anteponer       (B[0;7m^T(B[m Navegar[K[22d(B[0;7mNombre del archivo a escribir: test_3.txt                                       [22;42H(B[m[?12l[?25h[?25l[22;31H[1K (B[0;7m[ Escribiendo... ](B[m[K[1;49H(B[0;7m [79G(B[m[22;31H(B[0;7m[ 1 línea escrita ](B[m[23;14H(B[0;7m^O(B[m Guardar   (B[0;7m^W(B[m Buscar    (B[0;7m^K(B[m Cortar    (B[0;7m^T(B[m Ejecutar  (B[0;7m^C(B[m Ubicación[K[24;2H(B[0;7mX(B[m Salir     (B[0;7m^R(B[m Leer fich.(B[0;7m^\(B[m Reemplazar(B[0;7m^U(B[m Pegar     (B[0;7m^J(B[m Justificar(B[0;7m^/(B[m Ir a línea[?12l[?25h[2;21H[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat test_3.txt 
+[?2004lEsto es una tercera  prueba
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat test_3.txt [1P[1@q[1P[1@1[C[C[C[C[C [7mtest_1.txt [27m [1@test_1.txt  [7mtest_1.txt [27m test_1.txt [1P[1@3[1P[1@3[1P[1@_[1P[1@2
+[?2004lEsto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat test_1.txt test_2.txt  test_3.txt  [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K3.txt [1P[1@?
+[?2004lEsto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat test_?.txt [C[K[K[K[K[K[K*
+[?2004lEsto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat test_*[1P*[1P*[1P*[1P*[1P*t*[C > coma[Kbinado.txt
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat t* > combinado.txt[1Pcombinado.txt[1Pcombinado.txt[1Pcombinado.txt[1Pcombinado.txt[1Pcombinado.txt
+[?2004lEsto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat combinado.txt[Ccombinado.txtocombinado.txtmcombinado.txtbcombinado.txticombinado.txtncombinado.txtacombinado.txtocombinado.txt[1Pcombinado.txtdcombinado.txtocombinado.txt combinado.txt>combinado.txt combinado.txt[C[1@.[1@t[1@x[1@t
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004l [0m[01;34mcarpeta[0m     [01;34m'carpeta 4'[0m   combinado.txt   [01;34mdir2[0m   salida.txt   test_3.txt
+[01;34m'carpeta 1'[0m  [01;34m'carpeta 5'[0m   [01;34mdir[0m             [01;34mdir4[0m   test_1.txt
+[01;34m'carpeta 3'[0m  [01;34m'carpeta 6'[0m   [01;34mdir1[0m            [01;34motra[0m   test_2.txt
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat combinado.txt 
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ # esta vacio porque el nuevo fichero al que  hemos redirigidp ñp[K[Klos datos no [K[K[Kestaba b[Kvacio[C[1P[1@p[1P[1@o
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat t* >> combinado.txt 
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ echp[Ko "¿[K?[KLinea añadida" >> combinado.txt 
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat combinado.txt 
+[?2004lEsto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Linea añadida
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat combinado.txt [20@echo "Linea añadida" >>[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pcat t*[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat t* >> combinado.txt 
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat t* >> combinado.txt 
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat t* >> combinado.txt 
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat t* >> combinado.txt 
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat t* >> combinado.txt 
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat t* >> combinado.txt 
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat t* >> combinado.txt 
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat t* >> combinado.txt 
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cat combinado.txt 
+[?2004lEsto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Linea añadida
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ less combinado.txt 
+[?2004l[?1049h[22;0;0t[?1h=Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Linea añadida
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+Esto es una segunda prueba
+Esto es una tercera  prueba
+Esto es una prueba
+[7mcombinado.txt[27m[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[KEsto es una segunda prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una tercera  prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una segunda prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una tercera  prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una segunda prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una tercera  prueba
+[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[HMEsto es una prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEsto es una tercera  prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEsto es una segunda prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEsto es una prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMLinea añadida
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEsto es una tercera  prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEsto es una segunda prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEsto es una prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[KEsto es una segunda prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una tercera  prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una segunda prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una tercera  prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una segunda prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una tercera  prueba
+[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[HMEsto es una prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEsto es una tercera  prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEsto es una segunda prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEsto es una prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMLinea añadida
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEsto es una tercera  prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEsto es una segunda prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEsto es una prueba
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[KEsto es una segunda prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una tercera  prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una segunda prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una tercera  prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una segunda prueba
+:[K[K [KESCESC[KOO[KBB[KEsto es una tercera  prueba
+[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ echo "Minúscull[Kas" > a.tct[K[Kxt
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ echo "Minúsculas" > a.txt[K[K[K[K[KA.TXT[1P[1P[1P[1P[1P[1P[1P[1P[1@A[1P[1@a[1@y[1@u[C[1@s[1@c[1@u[1P[1P[1P[1P[1@ú[C[1@s[1@c[1@u[1@l[1@a
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ echo "Mayúsculas" > A.TXT[K[K[KTXT[K[K[Ktxt[1@ [1@y[1@ [1@m[1@i[1@n[1@ú[1@s[1@c[1@i[1P[1@u[1@l[1@a[1@s
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004l a.txt    [0m[01;34m'carpeta 1'[0m  [01;34m'carpeta 6'[0m      [01;34mdir2[0m         test_1.txt
+ A.txt    [01;34m'carpeta 3'[0m   combinado.txt   [01;34mdir4[0m         test_2.txt
+ A.TXT    [01;34m'carpeta 4'[0m   [01;34mdir[0m             [01;34motra[0m         test_3.txt
+ [01;34mcarpeta[0m  [01;34m'carpeta 5'[0m   [01;34mdir1[0m            salida.txt
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mv combinado.txt  [Kdir1
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cd dir [K1
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial/dir1[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial/dir1[00m$ ls
+[?2004lcombinado.txt
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial/dir1[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial/dir1[00m$ d..[K[K [K[Kcd ..
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mv dir1/combinado.txt .
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004l a.txt    [0m[01;34m'carpeta 1'[0m  [01;34m'carpeta 6'[0m      [01;34mdir2[0m         test_1.txt
+ A.txt    [01;34m'carpeta 3'[0m   combinado.txt   [01;34mdir4[0m         test_2.txt
+ A.TXT    [01;34m'carpeta 4'[0m   [01;34mdir[0m             [01;34motra[0m         test_3.txt
+ [01;34mcarpeta[0m  [01;34m'carpeta 5'[0m   [01;34mdir1[0m            salida.txt
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mv combinado.txt tes* dir 3[K[K3 dir3[K2
+[?2004lmv: no se puede efectuar `stat' sobre 'dir3': No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mv combinado.txt tes* dir3 dir2[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K#[Kmkdir dir [K3[K[K[K[K[K[K[K[K[K[Kmkdir [K[K[K[K[K[K# Había llamado a dir3 como 3 y lo he borrad o
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mkdir dir3
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mkdir dir3# Había llamado a dir3 como 3 y lo he borrado[A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [13Pmv combinado.txt tes* dir3 dir2
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lmv: no se puede efectuar `stat' sobre 'combinado.txt': No existe el archivo o el directorio
+mv: no se puede efectuar `stat' sobre 'tes*': No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mv combinado.txt tes* dir3 dir2kdir dir3[K# Había llamado a dir3 como 3 y lo he borrado[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pmv combinado.txt tes* dir3 dir2
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@_
+[?2004lmv: no se puede efectuar `stat' sobre 'combinado.txt': No existe el archivo o el directorio
+mv: no se puede efectuar `stat' sobre 'tes_*': No existe el archivo o el directorio
+mv: no se puede efectuar `stat' sobre 'dir3': No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004l a.txt   [0m[01;34mcarpeta[0m     [01;34m'carpeta 4'[0m   [01;34mdir[0m    [01;34mdir4[0m
+ A.txt  [01;34m'carpeta 1'[0m  [01;34m'carpeta 5'[0m   [01;34mdir1[0m   [01;34motra[0m
+ A.TXT  [01;34m'carpeta 3'[0m  [01;34m'carpeta 6'[0m   [01;34mdir2[0m   salida.txt
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ m[Kcp[K[Kmkdir dir3
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004l a.txt   [0m[01;34mcarpeta[0m     [01;34m'carpeta 4'[0m   [01;34mdir[0m    [01;34mdir3[0m   salida.txt
+ A.txt  [01;34m'carpeta 1'[0m  [01;34m'carpeta 5'[0m   [01;34mdir1[0m   [01;34mdir4[0m
+ A.TXT  [01;34m'carpeta 3'[0m  [01;34m'carpeta 6'[0m   [01;34mdir2[0m   [01;34motra[0m
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ lsmkdir dir3ls[Kmv combinado.txt tes_* dir3 dir2
+[?2004lmv: no se puede efectuar `stat' sobre 'combinado.txt': No existe el archivo o el directorio
+mv: no se puede efectuar `stat' sobre 'tes_*': No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004l a.txt   [0m[01;34mcarpeta[0m     [01;34m'carpeta 4'[0m   [01;34mdir[0m    [01;34mdir4[0m
+ A.txt  [01;34m'carpeta 1'[0m  [01;34m'carpeta 5'[0m   [01;34mdir1[0m   [01;34motra[0m
+ A.TXT  [01;34m'carpeta 3'[0m  [01;34m'carpeta 6'[0m   [01;34mdir2[0m   salida.txt
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cd dir [K2
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial/dir2[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial/dir2[00m$ ls
+[?2004lcombinado.txt  [0m[01;34mdir3[0m  test_1.txt  test_2.txt  test_3.txt
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial/dir2[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial/dir2[00m$ ls dir3
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial/dir2[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial/dir2[00m$ cd..[K[K[K[Kls dir3[Kcd dir2ls[Kmv combinado.txt tes_* dir3 dir2[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdir2/[K[K[K[K[Kcombinado.txt  dir[K[K[K[K/tuto[K[K[K[Kdir34[K[K4[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KCD[K[K ls[K[KCD ..[K[K[K[K[Kcd ..
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mv dir2/combinado.txt dir4/dir5/dir6
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls dir2
+[?2004l[0m[01;34mdir3[0m  test_1.txt  test_2.txt  test_3.txt
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls dir [K4/dir5/dir6/
+[?2004lcombinado.txt
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ 
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls dir4/dir5/dir6/combinado.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.[C[C[1P[1P[1@c[1@p[C[1@ [1P
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cp dir4/dir5/dir6/combinado.txt .[15Pls dir4/dir5/dir6/
+[?2004lcombinado.txt
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cd .[K[K[K[Kls .
+[?2004l a.txt   [0m[01;34mcarpeta[0m     [01;34m'carpeta 4'[0m   combinado.txt   [01;34mdir2[0m   salida.txt
+ A.txt  [01;34m'carpeta 1'[0m  [01;34m'carpeta 5'[0m   [01;34mdir[0m             [01;34mdir4[0m
+ A.TXT  [01;34m'carpeta 3'[0m  [01;34m'carpeta 6'[0m   [01;34mdir1[0m            [01;34motra[0m
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls .dir4/dir5/dir6/cp dir4/dir5/dir6/combinado.txt .[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P. .[1P.[C [K[K backup_combinado_[K.txt
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004l a.txt   backup_combinado.txt  [0m[01;34m'carpeta 3'[0m  [01;34m'carpeta 6'[0m      [01;34mdir1[0m   [01;34motra[0m
+ A.txt   [01;34mcarpeta[0m               [01;34m'carpeta 4'[0m   combinado.txt   [01;34mdir2[0m   salida.txt
+ A.TXT  [01;34m'carpeta 1'[0m            [01;34m'carpeta 5'[0m   [01;34mdir[0m             [01;34mdir4[0m
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mv backup_combinado.txt combinao[Kdo:[K_backup.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ k[Kls
+[?2004l a.txt   [0m[01;34mcarpeta[0m     [01;34m'carpeta 4'[0m   combinado_backup.txt   [01;34mdir1[0m   [01;34motra[0m
+ A.txt  [01;34m'carpeta 1'[0m  [01;34m'carpeta 5'[0m   combinado.txt          [01;34mdir2[0m   salida.txt
+ A.TXT  [01;34m'carpeta 3'[0m  [01;34m'carpeta 6'[0m   [01;34mdir[0m                    [01;34mdir4[0m
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ lsmv backup_combinado.txt combinado_backup.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccp combinado.txt backup_combinado.txtls .[Kdir4/dir5/dir6/cp dir4/dir5/dir6/combinado.txt .[15Pls dir4/dir5/dir6/2[Kmv dir2/combinado.txt dir4/dir5/dir6[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K"carpeta 1 "[K[K" carpeta 1[K[K_1
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mv "carpeta 1" carpeta_1[K3[C[1P[1@3
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mv "carpeta 3" carpeta_3[K4[1P[1@4
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mv "carpeta 4" carpeta_4[K5[C[1P[1@5
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ mv "carpeta 5" carpeta_5[K6[1P[1@6
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004la.txt  [0m[01;34mcarpeta[0m    [01;34mcarpeta_4[0m  combinado_backup.txt  [01;34mdir1[0m  [01;34motra[0m
+A.txt  [01;34mcarpeta_1[0m  [01;34mcarpeta_5[0m  combinado.txt         [01;34mdir2[0m  salida.txt
+A.TXT  [01;34mcarpeta_3[0m  [01;34mcarpeta_6[0m  [01;34mdir[0m                   [01;34mdir4[0m
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ [7mrm dir4/dir5/dir6/combinado.txt combinado_ba[27m[7mc[27m[7mkup.txt+[27m[A]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ rm dir4/dir5/dir6/combinado.txt combinado_backup.txt+
+[?2004lrm: no se puede borrar 'combinado_backup.txt+': No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ rm dir4/dir5/dir6/combinado.txt combinado_backup.txt+[C[K
+[?2004lrm: no se puede borrar 'dir4/dir5/dir6/combinado.txt': No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ rmdir carpeta_*
+[?2004lrmdir: fallo al borrar 'carpeta_6': El directorio no está vacío
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ rmdir carpeta_*[C[1P[1P[1@ [1@-
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ ls
+[?2004la.txt  A.TXT    combinado.txt  [0m[01;34mdir1[0m  [01;34mdir4[0m  salida.txt
+A.txt  [01;34mcarpeta[0m  [01;34mdir[0m            [01;34mdir2[0m  [01;34motra[0m
+[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ rm -r carpeta[K[K[K[K[K[K[K[K[K[K[K[K[Kls carpeta/
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ rm -r carpeta
+[?2004l[?2004h]0;javihernandezr@jabox: /tmp/tutorial[01;32mjavihernandezr@jabox[00m:[01;34m/tmp/tutorial[00m$ cd ../..
+[?2004l[?2004h]0;javihernandezr@jabox: /[01;32mjavihernandezr@jabox[00m:[01;34m/[00m$ mkdir p[KprscFC[1PFC[1PFCaFCcFC
+[?2004lmkdir: no se puede crear el directorio «pracFC»: Permiso denegado
+[?2004h]0;javihernandezr@jabox: /[01;32mjavihernandezr@jabox[00m:[01;34m/[00m$ cd
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ cdmkdir pracFC
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ # Lo h einn[K[K[K[K[Kw inten[K[K[K[K[K[K[Ke intentado crear en el reiz po[K[K[K[K[K[Kaiz por eso no me dejaba
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ cd[Kp g* [K # Lo he intentado crear en el raiz por eso no me dejaba[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir pracFC[Kcd[Kmkdir pracFC[4Pcd ../..rm -r carpeta[2Pls carpeta/[Krm -r carpeta_*di[C[C[C[C[C[C[C[C[C[C[C dir4/dir5/dir6/combinado.txt combinado_backup.txt+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kmv "carpeta 6" carpeta_65" carpeta_54" carpeta_43" carpeta_31" carpeta_1ls[Kmv backup_combinado.txt combinado_backup.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcp combinado.txt backup_combinado.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls .[Kcp combinado.txt backup_combinado.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls .[Kdir4/dir5/dir6/cp dir4/dir5/dir6/combinado.txt .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pls dir4/dir5/dir6/cp dir4/dir5/dir6/combinado.txt .[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ketc[K[K[K[K[K[Kls
+[?2004l[0m[01;34mDescargas[0m   [01;34mGrabacionesclases[0m  [01;34mpracFC[0m         README.md  typescript_prac4_bol1.
+[01;34mDocumentos[0m  [01;34mImágenes[0m           practica4.pdf  [01;34msnap[0m       [01;34mVídeos[0m
+[01;34mEscritorio[0m  [01;34mMúsica[0m             [34;42mprueba[0m         [01;34mtmp[0m
+[01;34mfc-alumno[0m   [01;34mPlantillas[0m         [01;34mPúblico[0m        token
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2022-10-22 18:31:34+01:00 [COMMAND_EXIT_CODE="0"]
+
+Script started on 2022-10-23 16:07:29+01:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ mkdir pracFC
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ mkdir pracFC[8Pexitnano typescript_prac4_bol2.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K binprogs[11@cp /usr/bin/*[C[C[C[C[C[C[C[C[C[1@G[1P[1@g[4P### EJERCICIO 1 ###exit[Kls -tl[K -lt[1Pexit### EJERCICIO 1 ###cp /usr/bin/g* binprogs[12Pls[C[C[C[C[C[C[C[C[C[Knano typescript_prac4_bol2.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kmkdir pracFC[Kmkdir pracFC[8Pexitnano typescript_prac4_bol2.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K binprogs[12@cp /usr/bin/g*[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[KpracFC/[1P[1P[1P[1P[1P[1P[1P[1P[1@e[1@t[1@c[1@/
+[?2004lcp: -r not specified; omitting directory '/etc/gamin'
+cp: -r not specified; omitting directory '/etc/gdb'
+cp: -r not specified; omitting directory '/etc/gdm3'
+cp: -r not specified; omitting directory '/etc/geoclue'
+cp: -r not specified; omitting directory '/etc/ghostscript'
+cp: -r not specified; omitting directory '/etc/glvnd'
+cp: -r not specified; omitting directory '/etc/gnome'
+cp: -r not specified; omitting directory '/etc/groff'
+cp: -r not specified; omitting directory '/etc/grub.d'
+cp: no se puede abrir '/etc/gshadow' para lectura: Permiso denegado
+cp: no se puede abrir '/etc/gshadow-' para lectura: Permiso denegado
+cp: -r not specified; omitting directory '/etc/gss'
+cp: -r not specified; omitting directory '/etc/gtk-2.0'
+cp: -r not specified; omitting directory '/etc/gtk-3.0'
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ ls [K[K[Kcat [K[K[K[Kls pracFC/
+[?2004lgai.conf  group  group-
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ # sE [K[K[K[K[Kls pracFC/[8@cp /etc/g*[C[C[C[C[C[C[C[C[1@-[1@R[1@ [1P[1P[1@r[1@ 
+[?2004lcp: no se puede abrir '/etc/gshadow' para lectura: Permiso denegado
+cp: no se puede abrir '/etc/gshadow-' para lectura: Permiso denegado
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ ls pracFC/
+[?2004lgai.conf  [0m[01;34mgdb[0m   [01;34mgeoclue[0m      [01;34mglvnd[0m  [01;34mgroff[0m  group-  [01;34mgss[0m      [01;34mgtk-3.0[0m
+[01;34mgamin[0m     [01;34mgdm3[0m  [01;34mghostscript[0m  [01;34mgnome[0m  group  [01;34mgrub.d[0m  [01;34mgtk-2.0[0m
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ CAT [K[K[K[Kcat /etc/gro
+groff/  group   group-  
+]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ cat /etc/group
+[?2004lroot:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,javihernandezr
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:javihernandezr
+floppy:x:25:
+tape:x:26:
+sudo:x:27:javihernandezr
+audio:x:29:pulse
+dip:x:30:javihernandezr
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:javihernandezr
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+bluetooth:x:113:
+ssl-cert:x:114:
+uuidd:x:115:
+systemd-oom:x:116:
+tcpdump:x:117:
+_ssh:x:118:
+avahi-autoipd:x:119:
+netdev:x:120:
+avahi:x:121:
+lpadmin:x:122:javihernandezr
+rtkit:x:123:
+whoopsie:x:124:
+sssd:x:125:
+nm-openvpn:x:126:
+scanner:x:127:saned
+saned:x:128:
+colord:x:129:
+geoclue:x:130:
+pulse:x:131:
+pulse-access:x:132:
+gdm:x:133:
+lxd:x:134:javihernandezr
+javihernandezr:x:1000:
+sambashare:x:135:javihernandezr
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ cat /etc/group[1P/group[1P/group[1P/group[1Pgroupp/groupr/groupa/groupc/groupF/groupC/group
+[?2004lroot:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,javihernandezr
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:javihernandezr
+floppy:x:25:
+tape:x:26:
+sudo:x:27:javihernandezr
+audio:x:29:pulse
+dip:x:30:javihernandezr
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:javihernandezr
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+bluetooth:x:113:
+ssl-cert:x:114:
+uuidd:x:115:
+systemd-oom:x:116:
+tcpdump:x:117:
+_ssh:x:118:
+avahi-autoipd:x:119:
+netdev:x:120:
+avahi:x:121:
+lpadmin:x:122:javihernandezr
+rtkit:x:123:
+whoopsie:x:124:
+sssd:x:125:
+nm-openvpn:x:126:
+scanner:x:127:saned
+saned:x:128:
+colord:x:129:
+geoclue:x:130:
+pulse:x:131:
+pulse-access:x:132:
+gdm:x:133:
+lxd:x:134:javihernandezr
+javihernandezr:x:1000:
+sambashare:x:135:javihernandezr
+
+Script started on 2022-11-08 16:20:07+01:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="150" LINES="43"]
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [K]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [K]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ ls - l /etc/group
+[?2004lls: no se puede acceder a '-': No existe el archivo o el directorio
+ls: no se puede acceder a 'l': No existe el archivo o el directorio
+/etc/group
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ ls - l /etc/group[1P
+[?2004l-rw-r--r-- 1 root root 1142 sep  9 18:08 /etc/group
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ ls -l /etc/group[K[K[K[K[K[K[K[K[K[KpracFC/group
+[?2004l-rw-r--r-- 1 javihernandezr javihernandezr 1142 nov  8 16:10 pracFC/group
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ # Mientra [Ks que el propi[K[K[K[K[Ketc tiene como propietario el r
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ #directorio raiz, el crea[K[K[K[Kgroup dentro del[K[Ke javier[K[Khernandezr [C[C[C[C[1P[1P[1P[1P[1P[1P[1@d[1@e[1@n[1@t[1@r[1@o[C[1@ [1@d[1@e[C[1@ p de javihernandezr  [A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr de javihernandezr [A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca de javihernandezr [A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc de javihernandezr [A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CF de javihernande[1@z[A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CC de javihernand[1@e[A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C de javihernan[1@d[A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce de javiherna[1@n[A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs de javihern[1@a[A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C de javiherna[1P[A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C de javihernan[1P[A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cde javihernand[1P[A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C de javihernande[1P[A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C de javihernandez[1P[A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C de javihernandezr[1P [A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C de javihernandezr [K[A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C de javihernandezr  [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P [Kkate pracFC/group
+[?2004lNo se ha encontrado la orden «kate», pero se puede instalar con:
+sudo snap install kate  # version 22.08.1, or
+sudo apt  install kate  # version 4:21.12.3-0ubuntu1
+Consulte «snap info kate» para ver más versiones.
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ sud[K[K[Kgkate pracFC/group[1P pracFC/group[1P pracFC/group[1P pracFC/group[1P pracFC/groupg pracFC/groupd pracFC/groupi pracFC/groupt pracFC/group[C pracFC/group[1@e
+[?2004l^C
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ gedit  pracFC/group[1P/group[1P/group[1P/group[1P/group[1P/group[1P/group[C/groupe/grouptc/group
+[?2004l^C
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ hexdup[Kmp -C pracFC/group
+[?2004l00000000  72 6f 6f 74 3a 78 3a 30  3a 0a 64 61 65 6d 6f 6e  |root:x:0:.daemon|
+00000010  3a 78 3a 31 3a 0a 62 69  6e 3a 78 3a 32 3a 0a 73  |:x:1:.bin:x:2:.s|
+00000020  79 73 3a 78 3a 33 3a 0a  61 64 6d 3a 78 3a 34 3a  |ys:x:3:.adm:x:4:|
+00000030  73 79 73 6c 6f 67 2c 6a  61 76 69 68 65 72 6e 61  |syslog,javiherna|
+00000040  6e 64 65 7a 72 0a 74 74  79 3a 78 3a 35 3a 0a 64  |ndezr.tty:x:5:.d|
+00000050  69 73 6b 3a 78 3a 36 3a  0a 6c 70 3a 78 3a 37 3a  |isk:x:6:.lp:x:7:|
+00000060  0a 6d 61 69 6c 3a 78 3a  38 3a 0a 6e 65 77 73 3a  |.mail:x:8:.news:|
+00000070  78 3a 39 3a 0a 75 75 63  70 3a 78 3a 31 30 3a 0a  |x:9:.uucp:x:10:.|
+00000080  6d 61 6e 3a 78 3a 31 32  3a 0a 70 72 6f 78 79 3a  |man:x:12:.proxy:|
+00000090  78 3a 31 33 3a 0a 6b 6d  65 6d 3a 78 3a 31 35 3a  |x:13:.kmem:x:15:|
+000000a0  0a 64 69 61 6c 6f 75 74  3a 78 3a 32 30 3a 0a 66  |.dialout:x:20:.f|
+000000b0  61 78 3a 78 3a 32 31 3a  0a 76 6f 69 63 65 3a 78  |ax:x:21:.voice:x|
+000000c0  3a 32 32 3a 0a 63 64 72  6f 6d 3a 78 3a 32 34 3a  |:22:.cdrom:x:24:|
+000000d0  6a 61 76 69 68 65 72 6e  61 6e 64 65 7a 72 0a 66  |javihernandezr.f|
+000000e0  6c 6f 70 70 79 3a 78 3a  32 35 3a 0a 74 61 70 65  |loppy:x:25:.tape|
+000000f0  3a 78 3a 32 36 3a 0a 73  75 64 6f 3a 78 3a 32 37  |:x:26:.sudo:x:27|
+00000100  3a 6a 61 76 69 68 65 72  6e 61 6e 64 65 7a 72 0a  |:javihernandezr.|
+00000110  61 75 64 69 6f 3a 78 3a  32 39 3a 70 75 6c 73 65  |audio:x:29:pulse|
+00000120  0a 64 69 70 3a 78 3a 33  30 3a 6a 61 76 69 68 65  |.dip:x:30:javihe|
+00000130  72 6e 61 6e 64 65 7a 72  0a 77 77 77 2d 64 61 74  |rnandezr.www-dat|
+00000140  61 3a 78 3a 33 33 3a 0a  62 61 63 6b 75 70 3a 78  |a:x:33:.backup:x|
+00000150  3a 33 34 3a 0a 6f 70 65  72 61 74 6f 72 3a 78 3a  |:34:.operator:x:|
+00000160  33 37 3a 0a 6c 69 73 74  3a 78 3a 33 38 3a 0a 69  |37:.list:x:38:.i|
+00000170  72 63 3a 78 3a 33 39 3a  0a 73 72 63 3a 78 3a 34  |rc:x:39:.src:x:4|
+00000180  30 3a 0a 67 6e 61 74 73  3a 78 3a 34 31 3a 0a 73  |0:.gnats:x:41:.s|
+00000190  68 61 64 6f 77 3a 78 3a  34 32 3a 0a 75 74 6d 70  |hadow:x:42:.utmp|
+000001a0  3a 78 3a 34 33 3a 0a 76  69 64 65 6f 3a 78 3a 34  |:x:43:.video:x:4|
+000001b0  34 3a 0a 73 61 73 6c 3a  78 3a 34 35 3a 0a 70 6c  |4:.sasl:x:45:.pl|
+000001c0  75 67 64 65 76 3a 78 3a  34 36 3a 6a 61 76 69 68  |ugdev:x:46:javih|
+000001d0  65 72 6e 61 6e 64 65 7a  72 0a 73 74 61 66 66 3a  |ernandezr.staff:|
+000001e0  78 3a 35 30 3a 0a 67 61  6d 65 73 3a 78 3a 36 30  |x:50:.games:x:60|
+000001f0  3a 0a 75 73 65 72 73 3a  78 3a 31 30 30 3a 0a 6e  |:.users:x:100:.n|
+00000200  6f 67 72 6f 75 70 3a 78  3a 36 35 35 33 34 3a 0a  |ogroup:x:65534:.|
+00000210  73 79 73 74 65 6d 64 2d  6a 6f 75 72 6e 61 6c 3a  |systemd-journal:|
+00000220  78 3a 31 30 31 3a 0a 73  79 73 74 65 6d 64 2d 6e  |x:101:.systemd-n|
+00000230  65 74 77 6f 72 6b 3a 78  3a 31 30 32 3a 0a 73 79  |etwork:x:102:.sy|
+00000240  73 74 65 6d 64 2d 72 65  73 6f 6c 76 65 3a 78 3a  |stemd-resolve:x:|
+00000250  31 30 33 3a 0a 63 72 6f  6e 74 61 62 3a 78 3a 31  |103:.crontab:x:1|
+00000260  30 34 3a 0a 6d 65 73 73  61 67 65 62 75 73 3a 78  |04:.messagebus:x|
+00000270  3a 31 30 35 3a 0a 73 79  73 74 65 6d 64 2d 74 69  |:105:.systemd-ti|
+00000280  6d 65 73 79 6e 63 3a 78  3a 31 30 36 3a 0a 69 6e  |mesync:x:106:.in|
+00000290  70 75 74 3a 78 3a 31 30  37 3a 0a 73 67 78 3a 78  |put:x:107:.sgx:x|
+000002a0  3a 31 30 38 3a 0a 6b 76  6d 3a 78 3a 31 30 39 3a  |:108:.kvm:x:109:|
+000002b0  0a 72 65 6e 64 65 72 3a  78 3a 31 31 30 3a 0a 73  |.render:x:110:.s|
+000002c0  79 73 6c 6f 67 3a 78 3a  31 31 31 3a 0a 74 73 73  |yslog:x:111:.tss|
+000002d0  3a 78 3a 31 31 32 3a 0a  62 6c 75 65 74 6f 6f 74  |:x:112:.bluetoot|
+000002e0  68 3a 78 3a 31 31 33 3a  0a 73 73 6c 2d 63 65 72  |h:x:113:.ssl-cer|
+000002f0  74 3a 78 3a 31 31 34 3a  0a 75 75 69 64 64 3a 78  |t:x:114:.uuidd:x|
+00000300  3a 31 31 35 3a 0a 73 79  73 74 65 6d 64 2d 6f 6f  |:115:.systemd-oo|
+00000310  6d 3a 78 3a 31 31 36 3a  0a 74 63 70 64 75 6d 70  |m:x:116:.tcpdump|
+00000320  3a 78 3a 31 31 37 3a 0a  5f 73 73 68 3a 78 3a 31  |:x:117:._ssh:x:1|
+00000330  31 38 3a 0a 61 76 61 68  69 2d 61 75 74 6f 69 70  |18:.avahi-autoip|
+00000340  64 3a 78 3a 31 31 39 3a  0a 6e 65 74 64 65 76 3a  |d:x:119:.netdev:|
+00000350  78 3a 31 32 30 3a 0a 61  76 61 68 69 3a 78 3a 31  |x:120:.avahi:x:1|
+00000360  32 31 3a 0a 6c 70 61 64  6d 69 6e 3a 78 3a 31 32  |21:.lpadmin:x:12|
+00000370  32 3a 6a 61 76 69 68 65  72 6e 61 6e 64 65 7a 72  |2:javihernandezr|
+00000380  0a 72 74 6b 69 74 3a 78  3a 31 32 33 3a 0a 77 68  |.rtkit:x:123:.wh|
+00000390  6f 6f 70 73 69 65 3a 78  3a 31 32 34 3a 0a 73 73  |oopsie:x:124:.ss|
+000003a0  73 64 3a 78 3a 31 32 35  3a 0a 6e 6d 2d 6f 70 65  |sd:x:125:.nm-ope|
+000003b0  6e 76 70 6e 3a 78 3a 31  32 36 3a 0a 73 63 61 6e  |nvpn:x:126:.scan|
+000003c0  6e 65 72 3a 78 3a 31 32  37 3a 73 61 6e 65 64 0a  |ner:x:127:saned.|
+000003d0  73 61 6e 65 64 3a 78 3a  31 32 38 3a 0a 63 6f 6c  |saned:x:128:.col|
+000003e0  6f 72 64 3a 78 3a 31 32  39 3a 0a 67 65 6f 63 6c  |ord:x:129:.geocl|
+000003f0  75 65 3a 78 3a 31 33 30  3a 0a 70 75 6c 73 65 3a  |ue:x:130:.pulse:|
+00000400  78 3a 31 33 31 3a 0a 70  75 6c 73 65 2d 61 63 63  |x:131:.pulse-acc|
+00000410  65 73 73 3a 78 3a 31 33  32 3a 0a 67 64 6d 3a 78  |ess:x:132:.gdm:x|
+00000420  3a 31 33 33 3a 0a 6c 78  64 3a 78 3a 31 33 34 3a  |:133:.lxd:x:134:|
+00000430  6a 61 76 69 68 65 72 6e  61 6e 64 65 7a 72 0a 6a  |javihernandezr.j|
+00000440  61 76 69 68 65 72 6e 61  6e 64 65 7a 72 3a 78 3a  |avihernandezr:x:|
+00000450  31 30 30 30 3a 0a 73 61  6d 62 61 73 68 61 72 65  |1000:.sambashare|
+00000460  3a 78 3a 31 33 35 3a 6a  61 76 69 68 65 72 6e 61  |:x:135:javiherna|
+00000470  6e 64 65 7a 72 0a                                 |ndezr.|
+00000476
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ cd /usr/
+[?2004l[?2004h]0;javihernandezr@jabox: /usr[01;32mjavihernandezr@jabox[00m:[01;34m/usr[00m$ cd /usr/hexdump -C pracFC/group
+[?2004lhexdump: pracFC/group: No existe el archivo o el directorio
+hexdump: error en todos los argumentos de fichero de entrada
+[?2004h]0;javihernandezr@jabox: /usr[01;32mjavihernandezr@jabox[00m:[01;34m/usr[00m$ hexdump -C pracFC/group.pracFC/group.pracFC/group/pracFC/group
+[?2004lhexdump: ../pracFC/group: No existe el archivo o el directorio
+hexdump: error en todos los argumentos de fichero de entrada
+[?2004h]0;javihernandezr@jabox: /usr[01;32mjavihernandezr@jabox[00m:[01;34m/usr[00m$ hexdump -C ../pracFC/group[C[C[1P/pracFC/group[1P/pracFC/grouph/pracFC/groupo/pracFC/groupm/pracFC/groupe/pracFC/group
+[?2004lhexdump: home/pracFC/group: No existe el archivo o el directorio
+hexdump: error en todos los argumentos de fichero de entrada
+[?2004h]0;javihernandezr@jabox: /usr[01;32mjavihernandezr@jabox[00m:[01;34m/usr[00m$ exit
+[?2004lexit
+
+Script done on 2022-11-08 16:30:13+01:00 [COMMAND_EXIT_CODE="1"]
