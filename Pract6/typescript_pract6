@@ -1,0 +1,1270 @@
+Script started on 2023-01-02 20:12:56+01:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [7m########EJERCICIO 1#######[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C########EJERCICIO 1#######
+[A
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [7mcat /proc/cpuinfo[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /proc/cpuinfo
+[A
+[?2004lprocessor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 165
+model name	: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+stepping	: 2
+cpu MHz		: 2591.996
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq monitor ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single fsgsbase avx2 invpcid rdseed clflushopt md_clear flush_l1d arch_capabilities
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5183.99
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [7mat /proc/cpuinfo | grep "cpu cores"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cat /proc/cpuinfo | grep "cpu cores"[1@c
+[?2004l[01;31m[Kcpu cores[m[K	: 1
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ # Hay u [Kn solo procesador
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ # El tamaño del bloque de cache es de 64 Bytes
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ # El tamaño de la dirección fisica es de 39 bits y 48 el  de la virtual
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [7mcat /proc/meminfo | grep "Mem"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /proc/meminfo | grep "Mem"
+[?2004l[01;31m[KMem[m[KTotal:        5962016 kB
+[01;31m[KMem[m[KFree:         2480320 kB
+[01;31m[KMem[m[KAvailable:    4025084 kB
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [7m#el tamaño que hay en la memoria total del sistema es de[27m[7m [27m[7m3081248 kB[27m[A]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ #el tamaño que hay en la memoria total del sistema es de 3081248 kB [7m5962016 kB[27m5962016 kB[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P
+[?2004l[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ [7mcd FicherosBoletinPractica6/[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd FicherosBoletinPractica6/DFicherosBoletinPractica6/eFicherosBoletinPractica6/scargas/FicherosBoletinPractica6/
+[?2004lbash: cd: Descargas/FicherosBoletinPractica6/: No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ ls Descargas/
+[?2004l Anaconda3-2022.10-Linux-x86_64.sh   [0m[01;34mFicherosPractica8[0m
+ [01;35mblanco.ppm[0m                          [01;31mFicherosPractica8.zip[0m
+ Documentos                          simulacion-examen-fc-practicas.ipynb
+[01;31m'FicherosBoletinPractica3(1).zip'[0m    [01;31msublime-text_build-3211_amd64.deb[0m
+[01;31m'FicherosBoletinPractica3(2).zip'[0m    tyescriptprac6
+ [01;31mFicherosBoletinPractica3.zip[0m        typescript_prac7_bol1
+ [01;31mFicherosBoletinPractica6.zip[0m        typescript_prac7_bol2
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ cd Descargas/FicherosPractica8/[1P/6/./z/i/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/B/o/l/e/t/i/n/P/r/s/[1P/a/c/t/i/c/a/./</i/[1P/[1P/z/i/p/[C[K[K[Kip[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd Descargas/FicherosBoletinPractica6/
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ ls
+[?2004l[0m[01;32mbusy[0m    fileio.c  Makefile     [01;32mpid[0m       syscalls.c
+busy.c  [01;32midle[0m      [01;32mopenfiles[0m    pid.c     [01;32mvaddress[0m
+[01;32mfileio[0m  idle.c    openfiles.c  [01;32msyscalls[0m  vaddress.c
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./vaddress[27m./vaddress
+[?2004lHola, mundo! Mi pid es 3683
+Dirección de 'f'  5606fbb57219
+Dirección de 'p'  7faa80e7c770
+Dirección de 'g'  5606fbb5a010
+Dirección de 'l'  7ffdd2d07938
+Dirección de 'h'  5606fc1912a0
+Dirección de 'i'  5606fbb5723c
+Pulsa INTRO para continuar..
+Introduce una dirección (hex): ^Z
+[1]+  Detenido                ./vaddress
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [K]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mcat /proc/6796/maps[27mcat /proc/6796/maps
+[?2004lcat: /proc/6796/maps: No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ cat /proc/6796/maps[1P/maps[1P/maps[1P/maps[1P/maps3/maps6/maps8/maps3/maps
+[?2004l5606fbb56000-5606fbb57000 r--p 00000000 08:03 1194024                    /home/javihernandezr/Descargas/FicherosBoletinPractica6/vaddress
+5606fbb57000-5606fbb58000 r-xp 00001000 08:03 1194024                    /home/javihernandezr/Descargas/FicherosBoletinPractica6/vaddress
+5606fbb58000-5606fbb59000 r--p 00002000 08:03 1194024                    /home/javihernandezr/Descargas/FicherosBoletinPractica6/vaddress
+5606fbb59000-5606fbb5a000 r--p 00002000 08:03 1194024                    /home/javihernandezr/Descargas/FicherosBoletinPractica6/vaddress
+5606fbb5a000-5606fbb5b000 rw-p 00003000 08:03 1194024                    /home/javihernandezr/Descargas/FicherosBoletinPractica6/vaddress
+5606fc191000-5606fc1b2000 rw-p 00000000 00:00 0                          [heap]
+7faa80e19000-7faa80e1c000 rw-p 00000000 00:00 0 
+7faa80e1c000-7faa80e44000 r--p 00000000 08:03 1056183                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7faa80e44000-7faa80fd9000 r-xp 00028000 08:03 1056183                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7faa80fd9000-7faa81031000 r--p 001bd000 08:03 1056183                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7faa81031000-7faa81035000 r--p 00214000 08:03 1056183                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7faa81035000-7faa81037000 rw-p 00218000 08:03 1056183                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7faa81037000-7faa81044000 rw-p 00000000 00:00 0 
+7faa81055000-7faa81057000 rw-p 00000000 00:00 0 
+7faa81057000-7faa81059000 r--p 00000000 08:03 1055846                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7faa81059000-7faa81083000 r-xp 00002000 08:03 1055846                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7faa81083000-7faa8108e000 r--p 0002c000 08:03 1055846                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7faa8108f000-7faa81091000 r--p 00037000 08:03 1055846                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7faa81091000-7faa81093000 rw-p 00039000 08:03 1055846                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffdd2ce8000-7ffdd2d09000 rw-p 00000000 00:00 0                          [stack]
+7ffdd2d5f000-7ffdd2d63000 r--p 00000000 00:00 0                          [vvar]
+7ffdd2d63000-7ffdd2d65000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mpmap -px $(pgrep vaddress)[27m
+[7m6796:   ./vaddress[27m[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ pmap -px $(pgrep vaddress)
+6796:   ./vaddress[C[1P[1P[1P[1P[1@3[1@6[1@8[1@3
+[?2004l3683:   ./vaddress
+Dirección        Kbytes     RSS   Sucio Modo  Asignaciones
+00005606fbb56000       4       4       0 r---- /home/javihernandezr/Descargas/FicherosBoletinPractica6/vaddress
+00005606fbb57000       4       4       0 r-x-- /home/javihernandezr/Descargas/FicherosBoletinPractica6/vaddress
+00005606fbb58000       4       4       0 r---- /home/javihernandezr/Descargas/FicherosBoletinPractica6/vaddress
+00005606fbb59000       4       4       4 r---- /home/javihernandezr/Descargas/FicherosBoletinPractica6/vaddress
+00005606fbb5a000       4       4       4 rw--- /home/javihernandezr/Descargas/FicherosBoletinPractica6/vaddress
+00005606fc191000     132       4       4 rw---   [ anon ]
+00007faa80e19000      12       8       8 rw---   [ anon ]
+00007faa80e1c000     160     160       0 r---- /usr/lib/x86_64-linux-gnu/libc.so.6
+00007faa80e44000    1620    1000       0 r-x-- /usr/lib/x86_64-linux-gnu/libc.so.6
+00007faa80fd9000     352     124       0 r---- /usr/lib/x86_64-linux-gnu/libc.so.6
+00007faa81031000      16      16      16 r---- /usr/lib/x86_64-linux-gnu/libc.so.6
+00007faa81035000       8       8       8 rw--- /usr/lib/x86_64-linux-gnu/libc.so.6
+00007faa81037000      52      20      20 rw---   [ anon ]
+00007faa81055000       8       4       4 rw---   [ anon ]
+00007faa81057000       8       8       0 r---- /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+00007faa81059000     168     168       0 r-x-- /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+00007faa81083000      44      40       0 r---- /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+00007faa8108f000       8       8       8 r---- /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+00007faa81091000       8       8       8 rw--- /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+00007ffdd2ce8000     132      12      12 rw---   [ pila ]
+00007ffdd2d5f000      16       0       0 r----   [ anon ]
+00007ffdd2d63000       8       4       0 r-x--   [ anon ]
+ffffffffff600000       4       0       0 --x--   [ anon ]
+---------------- ------- ------- ------- 
+kB totales          2776    1612      96
+3683:: orden no encontrada
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [K]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#f se ubica en el área de memoria 000055984c0ff000 [27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#f se ubica en el área de memoria 000055984c0ff000 [7m00005606[27m[7mf[27m[7mbb57000 [27m [A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C00005606fbb57000 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 00005606fb[C[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 00005606fbb[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 00005606fbb5[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 00005606fbb57[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 00005606fbb570[C[C[1P [A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 00005606fbb5700[C[1P [A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 00005606fbb57000[1P [A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 00005606fbb57000  [A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 00005606fbb57000   [A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1@a[1@a[1P[1P
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ # [7m00005606fbb5a000[27m00005606fbb5a000[7m# g se ubica en el área de memoria[27m00005606fbb5a000# g se ubica en el área de memoria 00005606fbb5a000[1P[1P[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m# l se ubica en el área de memoria[27m# l se ubica en el área de memoria [7m00007ffdd2ce8000[27m00007ffdd2ce8000
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m# p se ubica en el área de memoria[27m# p se ubica en el área de memoria [7m00005606fbb5a000[27m00005606fbb5a000
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m# f tiene permisos de lectura y ejecucion[27m[K]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m# f tiene permisos de lectura y ejecucion[27m# f tiene permisos de lectura y ejecucion
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ # ES[Ks [K[K[Kp esta en [7m00007faa80e44000[27m00007faa80e44000 y tiene permisos de e[Klectura y ejecución
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#g tiene permisos de lectura y escritura[27m#g tiene permisos de lectura y escritura
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m# l tiene permisos de lectura y escritura[27m# l tiene permisos de lectura y escritura
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ # P se encuentra en una biblioteca
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m# f y g corresponisos de ejecucion y lectura será el código/instrucciones del programa[27m[7m [27m[7my g al tenes globales, es decir, los datos que utiliza el programa[27m[A# f y g corresponisos de ejecucion y lectura será el código/instrucciones del programa y g al tenes globales, es decir, los datos que utiliza el programa
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mfg[27mfg
+[?2004l./vaddress
+^C
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mfg ./vaddress[27mfg ./vaddress
+[?2004lbash: fg: ./vaddress: no existe ese trabajo
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mfg[27mfg
+[?2004lbash: fg: actual: no existe ese trabajo
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#######EJERCICIO 3######[27m#######EJERCICIO 3######
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./vaddress[27m./vaddress
+[?2004lHola, mundo! Mi pid es 3904
+Dirección de 'f'  563f067df219
+Dirección de 'p'  7f1b21635770
+Dirección de 'g'  563f067e2010
+Dirección de 'l'  7ffe36c01098
+Dirección de 'h'  563f069f02a0
+Dirección de 'i'  563f067df23c
+Pulsa INTRO para continuar..558f67482219            
+Introduce una dirección (hex): 563f067df219
+Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: x
+Voy a ejecutar a partir de la dirección 563f067df219...
+Hola, mundo! Mi pid es 3904
+Terminado con éxito
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#en esa direccionrma de f, como podemos ver, está el código ejecutable del prog[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#en esa direccionrma de f, como podemos ver, está el código ejecutable del programa[K[K[K[K
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./vaddress[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./vaddress
+[A
+[?2004lHola, mundo! Mi pid es 3912
+Dirección de 'f'  558c4d015219
+Dirección de 'p'  7f0cd6bdc770
+Dirección de 'g'  558c4d018010
+Dirección de 'l'  7ffdb62c14e8
+Dirección de 'h'  558c4e8232a0
+Dirección de 'i'  558c4d01523c
+Pulsa INTRO para continuar..^C
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m# f i correspondea la funcion librería del programa[27m# f i correspondea la funcion librería del programa[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[1@ [C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m# p se almacenaichero de la biblioteca del sistema mientras que f i corresponden al fi[27m[7mc[27m[7mhero eje uecutable del sistema [27m
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C# p se almacenaichero de la biblioteca del sistema mientras que f i corresponden al fichero eje uecutable del sistema[1P[1P[1@c[1@i[1P[1@u[1P[1P[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccorresponden al fich[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccorresponden al fiche[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ichero de la biblioteca del sistema mientras que f corresponden al fich[1@e[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ceichero de la biblioteca del sistema mientras que f corresponden al fic[1@h[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnichero de la biblioteca del sistema mientras que f corresponden al fi[1@c[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ichero de la biblioteca del sistema mientras que f corresponden al f[1@i[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cuichero de la biblioteca del sistema mientras que f corresponden al [1@f[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnichero de la biblioteca del sistema mientras que f corresponden al[1@ [A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ichero de la biblioteca del sistema mientras que f corresponden a[1@l[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cichero de la biblioteca del sistema mientras que f corresponden al[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cichero de la biblioteca del sistema mientras que f corresponden al [1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cichero de la biblioteca del sistema mientras que f corresponden al f[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ceichero de la biblioteca del sistema mientras que f corresponden al [1@f[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clichero de la biblioteca del sistema mientras que f corresponden al[1@ [A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ichero de la biblioteca del sistema mientras que f corresponden a[1@l[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfichero de la biblioteca del sistema mientras que f corresponden [1@a[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cichero de la biblioteca del sistema mientras que f corresponden[1@ [A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cchero de la biblioteca del sistema mientras que f corresponden [1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./vaddress[27m./vaddress
+[?2004lHola, mundo! Mi pid es 4096
+Dirección de 'f'  560ba5974219
+Dirección de 'p'  7f0e70702770
+Dirección de 'g'  560ba5977010
+Dirección de 'l'  7ffeaffa84a8
+Dirección de 'h'  560ba6bd62a0
+Dirección de 'i'  560ba597423c
+Pulsa INTRO para continuar..
+Introduce una dirección (hex): 560ba5974219
+Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: r
+Voy a leer 4 bytes a partir de la dirección 560ba5974219...
+ f3 0f 1e fa
+Terminado con éxito
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ ./vaddress
+[?2004lHola, mundo! Mi pid es 4115
+Dirección de 'f'  55ef3041a219
+Dirección de 'p'  7fe8c9077770
+Dirección de 'g'  55ef3041d010
+Dirección de 'l'  7ffc0d450858
+Dirección de 'h'  55ef3209f2a0
+Dirección de 'i'  55ef3041a23c
+Pulsa INTRO para continuar..
+Introduce una dirección (hex): ^[[A^[[A^[[B            55ef3041a219
+Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: w
+Voy a escribir 4 bytes a partir de la dirección 55ef3041a219...
+Violación de segmento (`core' generado)
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ # NO deja leerlo pq no tiene permisos de escritura
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ # NO deja leerlo pq no tiene permisos de escritura./vaddress[K
+[?2004lHola, mundo! Mi pid es 4122
+Dirección de 'f'  55bef98f9219
+Dirección de 'p'  7fe95a17a770
+Dirección de 'g'  55bef98fc010
+Dirección de 'l'  7ffd612ab4d8
+Dirección de 'h'  55bef9e692a0
+Dirección de 'i'  55bef98f923c
+Pulsa INTRO para continuar..
+Introduce una dirección (hex): 55bef98fc010
+Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: w
+Voy a escribir 4 bytes a partir de la dirección 55bef98fc010...
+Terminado con éxito
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ ./vaddress
+[?2004lHola, mundo! Mi pid es 4125
+Dirección de 'f'  559e406c9219
+Dirección de 'p'  7fb1f1329770
+Dirección de 'g'  559e406cc010
+Dirección de 'l'  7ffc063b9878
+Dirección de 'h'  559e41acb2a0
+Dirección de 'i'  559e406c923c
+Pulsa INTRO para continuar..55bef98fc010
+Introduce una dirección (hex): Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: r
+Voy a leer 4 bytes a partir de la dirección 5bef98fc010...
+Violación de segmento (`core' generado)
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ # No tiene peri[Kmisos
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ # No tiene permisos[9P./vaddress
+[?2004lHola, mundo! Mi pid es 4132
+Dirección de 'f'  55c908b4f219
+Dirección de 'p'  7f4003eae770
+Dirección de 'g'  55c908b52010
+Dirección de 'l'  7ffee5f58aa8
+Dirección de 'h'  55c90a8ef2a0
+Dirección de 'i'  55c908b4f23c
+Pulsa INTRO para continuar..
+Introduce una dirección (hex): 55bef98fc010
+Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: w
+Voy a escribir 4 bytes a partir de la dirección 55bef98fc010...
+Violación de segmento (`core' generado)
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ ./vaddress
+[?2004lHola, mundo! Mi pid es 4165
+Dirección de 'f'  55d27f037219
+Dirección de 'p'  7f60b4e3d770
+Dirección de 'g'  55d27f03a010
+Dirección de 'l'  7ffcf49cccd8
+Dirección de 'h'  55d27fe362a0
+Dirección de 'i'  55d27f03723c
+Pulsa INTRO para continuar..55bef98fc010
+Introduce una dirección (hex): Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: r
+Voy a leer 4 bytes a partir de la dirección 5bef98fc010...
+Violación de segmento (`core' generado)
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ ./vaddress
+[?2004lHola, mundo! Mi pid es 4169
+Dirección de 'f'  559ccae7e219
+Dirección de 'p'  7f9704cb8770
+Dirección de 'g'  559ccae81010
+Dirección de 'l'  7fff09224f78
+Dirección de 'h'  559ccbcf92a0
+Dirección de 'i'  559ccae7e23c
+Pulsa INTRO para continuar..55bef98fc010            55bef98fc010
+Introduce una dirección (hex): Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: x
+Voy a ejecutar a partir de la dirección 5bef98fc010...
+Violación de segmento (`core' generado)
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ ./vaddress
+[?2004lHola, mundo! Mi pid es 4173
+Dirección de 'f'  5595f23b7219
+Dirección de 'p'  7fa9b970b770
+Dirección de 'g'  5595f23ba010
+Dirección de 'l'  7ffc62a91b48
+Dirección de 'h'  5595f25862a0
+Dirección de 'i'  5595f23b723c
+Pulsa INTRO para continuar..
+Introduce una dirección (hex): 5595f23ba010
+Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: w
+Voy a escribir 4 bytes a partir de la dirección 5595f23ba010...
+Terminado con éxito
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ ./vaddress
+[?2004lHola, mundo! Mi pid es 4176
+Dirección de 'f'  55d8d2be7219
+Dirección de 'p'  7f4d7b67f770
+Dirección de 'g'  55d8d2bea010
+Dirección de 'l'  7ffd141feec8
+Dirección de 'h'  55d8d36c22a0
+Dirección de 'i'  55d8d2be723c
+Pulsa INTRO para continuar..55d8d2bea010            
+Introduce una dirección (hex): 55d8d2bea010
+Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: r
+Voy a leer 4 bytes a partir de la dirección 55d8d2bea010...
+ ff ff ff ff
+Terminado con éxito
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ ./vaddress
+[?2004lHola, mundo! Mi pid es 4177
+Dirección de 'f'  555d03256219
+Dirección de 'p'  7f6ff5139770
+Dirección de 'g'  555d03259010
+Dirección de 'l'  7ffc262ce9d8
+Dirección de 'h'  555d03afc2a0
+Dirección de 'i'  555d0325623c
+Pulsa INTRO para continuar..555d03259010
+Introduce una dirección (hex): Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: ^C
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ ./vaddress
+[?2004lHola, mundo! Mi pid es 4180
+Dirección de 'f'  55bfc65a6219
+Dirección de 'p'  7f45a2e92770
+Dirección de 'g'  55bfc65a9010
+Dirección de 'l'  7ffe4568c9d8
+Dirección de 'h'  55bfc762c2a0
+Dirección de 'i'  55bfc65a623c
+Pulsa INTRO para continuar..
+Introduce una dirección (hex): 555d03259010
+Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: x
+Voy a ejecutar a partir de la dirección 555d03259010...
+Violación de segmento (`core' generado)
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ ./vaddress
+[?2004lHola, mundo! Mi pid es 4189
+Dirección de 'f'  563c0aabd219
+Dirección de 'p'  7fe9f27fa770
+Dirección de 'g'  563c0aac0010
+Dirección de 'l'  7fff41db5338
+Dirección de 'h'  563c0c10e2a0
+Dirección de 'i'  563c0aabd23c
+Pulsa INTRO para continuar..
+Introduce una dirección (hex): 563c0aac0010
+Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: x
+Voy a ejecutar a partir de la dirección 563c0aac0010...
+Violación de segmento (`core' generado)
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#la direccion de l corresponde a la variable del programa que es -1 y se encuentra en [27m[7mu[27m[7mna direccion distinta ya que corresponde a la funcion libreria del programla direccion de l corresponde a la variable del programa que es -1 y s[27m[7me[27m[7m encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del programa[27m[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#la direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programla direccion de l corresponde a la variable del programa que es -1 y se[1P encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del program[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K NO tiee [K[Kb[Kne permisos de ejecución
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./vaddress[27m./vaddress
+[?2004lHola, mundo! Mi pid es 4586
+Dirección de 'f'  55e51940c219
+Dirección de 'p'  7f8820481770
+Dirección de 'g'  55e51940f010
+Dirección de 'l'  7ffd8c398448
+Dirección de 'h'  55e51a2f12a0
+Dirección de 'i'  55e51940c23c
+Pulsa INTRO para continuar..
+Introduce una dirección (hex): 55e51940c23c
+Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: x
+Voy a ejecutar a partir de la dirección 55e51940c23c...
+Instrucción ilegal (`core' generado)
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mless vaddress.c[27mless vaddress.c
+[?2004l[?1049h[22;0;0t[?1h=#include <sys/types.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int globalVar = -1;
+
+void hello(void) {
+    printf("Hola, mundo! Mi pid es %d\n", getpid());
+}
+
+void illegal(void) {
+    __asm__ ( ".long 0xFFFFFFFF"); // Illegal instrucion
+}
+
+int main(void) {
+    int localVar;
+    int *heapVar = (int *)malloc(sizeof(int));
+    hello();
+    unsigned long f =(unsigned long)&hello;
+    unsigned long p =(unsigned long)&printf;
+    unsigned long i =(unsigned long)&illegal;
+[7mvaddress.c[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#como podemos vercutar porque como podemos ver al abrir el codifo de vaddress.c la dir[27m[7me[27m[7mccion de i corresponde a una instruccion no permitida[27m[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ #como podemos vercutar porque como podemos ver al abrir el codifo de vaddress.c la direccion de i corresponde a una instruccion no permitida[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co de vaddress.c la direc[C[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgo de vaddress.c la dire[C[1@c[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direc[C[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direcc[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direcci[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccio[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion [1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccomo podemos ver al abrir el codigo de vaddress.c la direccion d[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de [1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i [1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i c[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i co[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i cor[C[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i corr[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[Ccomo podemos ver al abrir el codigo de vaddress.c la direccion de i corre[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i corres[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i corresp[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i correspo[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i correspon[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i correspond[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i corresponde[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i corresponde [1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[Ccomo podemos ver al abrir el codigo de vaddress.c la direccion de i corresponde a[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i corresponde a [1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i corresponde a u[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i corresponde a un[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C como podemos ver al abrir el codigo de vaddress.c la direccion de i corresponde a una[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C como podemos ver al abrir el codigo de vaddress.c la direccion de i corresponde a una [1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ # como podemos ver al abrir el codigo de vaddress.c la direccion de i corresponde a una[1@ [A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C
+
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./vaddress[27m./vaddress
+[?2004lHola, mundo! Mi pid es 4644
+Dirección de 'f'  558b7f6f6219
+Dirección de 'p'  7f0e0733f770
+Dirección de 'g'  558b7f6f9010
+Dirección de 'l'  7ffc2282d588
+Dirección de 'h'  558b80c1c2a0
+Dirección de 'i'  558b7f6f623c
+Pulsa INTRO para continuar..
+Introduce una dirección (hex): 7ffc2282d588
+Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: w
+Voy a escribir 4 bytes a partir de la dirección 7ffc2282d588...
+Terminado con éxito
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#El programa escribe ya qye l tiene permisos de ejecucion[27m[1P#El programa escribe ya qye l tiene permisos de ejecucio[K[K[K[K[K[K[K[Kescritura[1P[1@u
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mcat vaddress.c[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat vaddress.c
+[A
+[?2004l#include <sys/types.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int globalVar = -1;
+
+void hello(void) {
+    printf("Hola, mundo! Mi pid es %d\n", getpid());
+}
+
+void illegal(void) {
+    __asm__ ( ".long 0xFFFFFFFF"); // Illegal instrucion
+}
+
+int main(void) {
+    int localVar;
+    int *heapVar = (int *)malloc(sizeof(int));
+    hello();
+    unsigned long f =(unsigned long)&hello;
+    unsigned long p =(unsigned long)&printf;
+    unsigned long i =(unsigned long)&illegal;
+    unsigned long g =(unsigned long)&globalVar;
+    unsigned long l =(unsigned long)&localVar;
+    unsigned long h =(unsigned long)heapVar;
+    /******************************************/
+    printf("Dirección de 'f'  %lx\n", f);
+    printf("Dirección de 'p'  %lx\n", p);
+    printf("Dirección de 'g'  %lx\n", g);
+    printf("Dirección de 'l'  %lx\n", l);
+    printf("Dirección de 'h'  %lx\n", h);
+    printf("Dirección de 'i'  %lx\n", i);
+    printf("Pulsa INTRO para continuar..");
+    getchar();
+    unsigned long testAddress = 0;
+    printf("Introduce una dirección (hex): ");
+    scanf("%lx", &testAddress);
+    printf("Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)\n");
+    printf("Elige una opción: ");
+    char opcion;
+    scanf(" %c", &opcion); // Leading blank to skip newline in input buffer.
+    if (opcion == 'r') {
+        printf("Voy a leer 4 bytes a partir de la dirección %lx...\n", testAddress);
+        for(int i=0; i < sizeof(int);i++) {
+            unsigned char valor  = *((unsigned char *) testAddress+i);
+            printf(" %02x", (unsigned int)valor);
+        }
+        printf("\n");
+    }else if (opcion  == 'w') {
+        printf("Voy a escribir 4 bytes a partir de la dirección %lx...\n", testAddress);
+        *((unsigned long *) testAddress) = 0;
+    }else if (opcion  == 'x') {
+        printf("Voy a ejecutar a partir de la dirección %lx...\n", testAddress);
+        void (*foo)(void) = (void (*)())testAddress;
+        foo();
+    }else {
+        printf("Opción inválida\n");
+    }
+    printf("Terminado con éxito\n");    
+}
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#la direccion de l corresponde a la variable del programa que es -1 y se encuentra en [27m[7mu[27m[7mna direccion distinta ya que corresponde a la funcion libreria del programla direccion de l corresponde a la variable del programa que es -1 y s[27m[7me[27m[7m encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del programa [27m
+[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#la direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del programa[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se e[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se en[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se enc[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encu[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encue[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuen[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuent[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca direccion de l corresponde a la variable del programa que es -1 y se encuentr[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra e[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en u[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en un[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una d[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca direccion de l corresponde a la variable del programa que es -1 y se encuentra en una di[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una dir[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una dire[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direc[C[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direcc[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direcci[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccio[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion d[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion di[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion dis[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion dist[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion disti[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distin[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distint[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta y[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya q[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya qu[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que c[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que co[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que cor[C[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corr[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corre[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corres[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresp[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que correspo[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que correspon[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que correspond[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a l[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la f[1P[A[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la fu[1P[A[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la fun[1P[A[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la func[1P[A[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funci[1P[A[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcio[1P[A[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion[1P[A[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion [1P[A[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion l[1P[A[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion li[1P[A[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion lib[1P[A[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libr[1P[A[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libre[1P[Ala direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion librer[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreri[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria [1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria d[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria de[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direc[Cion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del [1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del p[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del pr[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del pro[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del prog[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del progr[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del progra[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del program[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa [1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y [1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l cor[Cesponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g [1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g c[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g co[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g cor[C[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corr[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corre[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corres[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresp[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g correspo[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g correspon[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g correspond[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde [1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a [1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a l[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la [1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la f[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la fu[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la fun[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la func[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funci[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcio[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion [1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion e[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ej[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion eje[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejec[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecu[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecut[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecuta[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutab[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutabl[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable [1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable d[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable de[1P[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del[1P programa[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del [1Pprograma[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del p[1Programa[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del pr[1Pograma[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del pro[1Pgrama[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del prog[1Prama[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del progr[1Pama[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del progra[1Pma[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del program[1Pa[A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del programa [A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del programa  [A[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se[1P
+
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se [1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se e[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se en[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se enc[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encu[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encue[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuen[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuent[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentr[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra [1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra e[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[C[Cla direccion de l corresponde a la variable del programa que es -1 y se encuentra en [1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C[Ca direccion de l corresponde a la variable del programa que es -1 y se encuentra en u[1P[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [C
+
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./vaddress[27m./vaddress
+[?2004lHola, mundo! Mi pid es 4670
+Dirección de 'f'  5648ae213219
+Dirección de 'p'  7f2a0959e770
+Dirección de 'g'  5648ae216010
+Dirección de 'l'  7ffdf9d0cd08
+Dirección de 'h'  5648ae9dc2a0
+Dirección de 'i'  5648ae21323c
+Pulsa INTRO para continuar..
+Introduce una dirección (hex): 0
+Opciones: 'r' (leer), 'w' (escribir), 'x' (ejecutar)
+Elige una opción: r
+Voy a leer 4 bytes a partir de la dirección 0...
+Violación de segmento (`core' generado)
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ # No hay nada que leerr[K
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m########EJERCICIO 4#######[27m########EJERCICIO 4#######
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./idle & ./busy &[27m./idle & ./busy &
+[?2004l[1] 4672
+[2] 4673
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mgrep State /proc/{7070,7071}/status[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep State /proc/{7070,7071}/status[C[1P}/status[1P}/status[1P}/status[1P}/status[1P}/status[1P}/status[1P}/status[1P}/status[1P}/status4}/status6}/status7}/status2}/status,}/status4}/status6}/status7}/status3}/status
+[?2004l[35m[K/proc/4672/status[m[K[36m[K:[m[K[01;31m[KState[m[K:	S (sleeping)
+[35m[K/proc/4673/status[m[K[36m[K:[m[K[01;31m[KState[m[K:	R (running)
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mgrep State switch/proc/{7070,7071}/status | switches[27m[1Pgrep State switch/proc/{7070,7071}/status | switche[K[K[K[K[K[K[K[K[K
+[?2004lgrep: switch/proc/7070/status: No existe el archivo o el directorio
+grep: switch/proc/7071/status: No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ grep State switch/proc/{7070,7071}/status [1P[1P[1P[1P[1P[1P[1P[1P[1P[1@4[1@6[1@7[1@2[1@,[1@4[1@6[1@7[1@3
+[?2004lgrep: switch/proc/4672/status: No existe el archivo o el directorio
+grep: switch/proc/4673/status: No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mless idle.c[27mless idle.c
+[?2004l[?1049h[22;0;0t[?1h=#include <unistd.h>
+
+int main(void) {
+    while(1) {
+        sleep(1);
+    }
+}
+[7midle.c (END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mless busy.c[27mless busy.c
+[?2004l[?1049h[22;0;0t[?1h=int main(void) {
+    while(1);
+}
+[7mbusy.c (END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mless idle.c ststuatus[27mless idle.c ststuatus
+[?2004l[?1049h[22;0;0t[?1h=#include <unistd.h>
+
+int main(void) {
+    while(1) {
+        sleep(1);
+    }
+}
+[7midle.c (file 1 of 2) (END) - Next: ststuatus[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mless busy.c ststuatus[27mless busy.c ststuatus
+[?2004l[?1049h[22;0;0t[?1h=int main(void) {
+    while(1);
+}
+[7mbusy.c (file 1 of 2) (END) - Next: ststuatus[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./idle[27m./idle
+[?2004l^C
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mpmap -px $(pgrep idle)[27mpmap -px $(pgrep idle)
+[?2004l16:   [idle_inject/0]
+Dirección        Kbytes     RSS   Sucio Modo  Asignaciones
+---------------- ------- ------- ------- 
+kB totales             0       0       0
+4672:   ./idle
+Dirección        Kbytes     RSS   Sucio Modo  Asignaciones
+00005632011d8000       4       4       0 r---- /home/javihernandezr/Descargas/FicherosBoletinPractica6/idle
+00005632011d9000       4       4       0 r-x-- /home/javihernandezr/Descargas/FicherosBoletinPractica6/idle
+00005632011da000       4       0       0 r---- /home/javihernandezr/Descargas/FicherosBoletinPractica6/idle
+00005632011db000       4       4       4 r---- /home/javihernandezr/Descargas/FicherosBoletinPractica6/idle
+00005632011dc000       4       4       4 rw--- /home/javihernandezr/Descargas/FicherosBoletinPractica6/idle
+00007f4445ba8000      12       8       8 rw---   [ anon ]
+00007f4445bab000     160     160       0 r---- /usr/lib/x86_64-linux-gnu/libc.so.6
+00007f4445bd3000    1620     748       0 r-x-- /usr/lib/x86_64-linux-gnu/libc.so.6
+00007f4445d68000     352       0       0 r---- /usr/lib/x86_64-linux-gnu/libc.so.6
+00007f4445dc0000      16      16      16 r---- /usr/lib/x86_64-linux-gnu/libc.so.6
+00007f4445dc4000       8       8       8 rw--- /usr/lib/x86_64-linux-gnu/libc.so.6
+00007f4445dc6000      52      16      16 rw---   [ anon ]
+00007f4445de4000       8       4       4 rw---   [ anon ]
+00007f4445de6000       8       8       0 r---- /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+00007f4445de8000     168     168       0 r-x-- /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+00007f4445e12000      44      40       0 r---- /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+00007f4445e1e000       8       8       8 r---- /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+00007f4445e20000       8       8       8 rw--- /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+00007ffda3ec0000     132      16      16 rw---   [ pila ]
+00007ffda3fb3000      16       0       0 r----   [ anon ]
+00007ffda3fb7000       8       4       0 r-x--   [ anon ]
+ffffffffff600000       4       0       0 --x--   [ anon ]
+---------------- ------- ------- ------- 
+kB totales          2644    1228      92
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mpgrep idle[27mpgrep idle
+[?2004l16
+4672
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mpgrep busy[27mpgrep busy
+[?2004l4673
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m/proc/grep Stateg[27m/proc/grep Stateg
+[?2004lbash: /proc/grep: No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mpkill 7070 7071g[27mpkill 7070 7071g[C[K[K[K[K[K[K[K[K[K[K4672 4673
+[?2004lpkill: Solo se puede proporcionar un patrón
+Pruebe «pkill --help» para más información.
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ pkill 4672 4673[K[K[K[K
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ pkill 4672 [C[1P 3 
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m ######EJERCICIO 5######[27m ######EJERCICIO 5######
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./syscalls[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./syscalls
+[A
+[?2004lLeyendo por stdin: 
+Escribiendo en stderr los datos leidos por stdin : 
+Ahora voy a ejecutar 'ls /'
+bin   cdrom  etc   lib	  lib64   lost+found  mnt  proc  run   snap  swapfile  tmp  var
+boot  dev    home  lib32  libx32  media       opt  root  sbin  srv   sys       usr
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mless syscalls.c[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cless syscalls.c
+[A
+[?2004l[?1049h[22;0;0t[?1h=#include <string.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+#define MAX_SIZE 100
+
+char buffer[MAX_SIZE];
+char *msg1 = "Leyendo por stdin: ";
+char *msg2 = "Escribiendo en stderr los datos leidos por stdin : ";
+char *msg3 = "Ahora voy a ejecutar 'ls /'\n";
+
+int main(void) {
+    write(1,msg1, strlen(msg1));       // write msg1 to stdout
+    read(0,buffer, MAX_SIZE);          // read from stdin
+    write(1,msg2, strlen(msg2));       // write msg2 to stdout
+    write(2,buffer, strlen(buffer));   // write data read from stdin to stderr
+    write(1,msg3, strlen(msg3));       // write msg3 to stdout
+    execl("/bin/ls", "ls", "/",NULL);  // execute program 'ls'
+}
+[7msyscalls.c (END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [K]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ # Lee la entrada estandar y escribe la salida de r[Kerror
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ v[K[7mstrace ./syscals[27mstrace ./syscals
+[?2004lstrace: Can't stat './syscals': No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ LS
+[?2004lLS: orden no encontrada
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ ls
+[?2004l[0m[01;32mbusy[0m  busy.c  [01;32mfileio[0m  fileio.c  [01;32midle[0m  idle.c  Makefile  [01;32mopenfiles[0m  openfiles.c  [01;32mpid[0m  pid.c  [01;32msyscalls[0m  syscalls.c  [01;32mvaddress[0m  vaddress.c
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ ls -l
+[?2004ltotal 172
+-rwxrwxr-x 1 javihernandezr javihernandezr 16464 nov  3 05:29 [0m[01;32mbusy[0m
+-rw-rw-r-- 1 javihernandezr javihernandezr    33 nov  3 05:29 busy.c
+-rwxrwxr-x 1 javihernandezr javihernandezr 17016 nov  3 05:29 [01;32mfileio[0m
+-rw-rw-r-- 1 javihernandezr javihernandezr   426 nov  3 05:29 fileio.c
+-rwxrwxr-x 1 javihernandezr javihernandezr 16696 nov  3 05:29 [01;32midle[0m
+-rw-rw-r-- 1 javihernandezr javihernandezr    79 nov  3 05:29 idle.c
+-rw-rw-r-- 1 javihernandezr javihernandezr   105 nov  3 05:29 Makefile
+-rwxrwxr-x 1 javihernandezr javihernandezr 17512 nov  3 05:29 [01;32mopenfiles[0m
+-rw-rw-r-- 1 javihernandezr javihernandezr  2009 nov  3 05:29 openfiles.c
+-rwxrwxr-x 1 javihernandezr javihernandezr 16744 nov  3 05:29 [01;32mpid[0m
+-rw-rw-r-- 1 javihernandezr javihernandezr   125 nov  3 05:29 pid.c
+-rwxrwxr-x 1 javihernandezr javihernandezr 16968 nov  3 05:29 [01;32msyscalls[0m
+-rw-rw-r-- 1 javihernandezr javihernandezr   665 nov  3 05:29 syscalls.c
+-rwxrwxr-x 1 javihernandezr javihernandezr 17120 nov  3 05:29 [01;32mvaddress[0m
+-rw-rw-r-- 1 javihernandezr javihernandezr  2069 nov  3 05:29 vaddress.c
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mchmod 777 syscalls[27mchmod 777 syscalls
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./syscalls[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./syscalls
+[A
+[?2004lLeyendo por stdin: 
+Escribiendo en stderr los datos leidos por stdin : 
+Ahora voy a ejecutar 'ls /'
+bin  boot  cdrom  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media	mnt  opt  proc	root  run  sbin  snap  srv  swapfile  sys  tmp	usr  var
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ less syscalls
+[?2004l"syscalls" may be a binary file.  See it anyway? 
+[?1049h[22;0;0t[?1h=[7m^?[27mELF[7m^B^A^A^@^@^@^@^@^@^@^@^@^C^@[27m>[7m^@^A^@^@^@<C0>^P^@^@^@^@^@^@[27m@[7m^@^@^@^@^@^@^@<88>[27m:[7m^@^@^@^@^@^@^@^@^@^@[27m@[7m^@[27m8[7m^@^M^@[27m@[7m^@^_^@^^^@^F^@^@^@^D^@^@^@[27m@[7m^@^@^@^@^@^@^@[27m@[7m^@^@^@^@^@^@^@[27m@[7m^@^@^@^[27m [7m^@^@^@^@<D8>^B^@^@^@^@^@^@<D8>^B^@^@^@^@^@^@^H^@^@^@^@^@^@^@^C^@^@^@^D^@^@^@^X^C^@^@^@^@^@^@^X^C^@^@^@^@^@^@^X^C^@^@^@^@^@^@^\^@^@^@^@^@^@^@^\^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^A^@^[27m [7m^@^@^D^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@<F0>^F^@^@^@^@^@^@<F0>^F^@^@^@^@^@^@^@^P^@^@^@^@^@^@^A^@^@^@^E^@^@^@^@^P^@^@^@^@^@^@^@^P^@^@^@^@^@^@^@^P^@^@^@^@^@^@^[27m [7m^U^C^@^@^@^@^@^@^U^C^@^@^@^@^@^@^@^P^@^@^@^@^@^@^A^@^@^@^D^@^@^@^@[27m [7m^@^@^@^@^@^@^@[27m [7m^@^@^@^@^@^@^@[27m [7m^@^@^@^@^@^@<D0>^A^@^@^@^@^@^@<D0>^A^@^@^@^@^@^@^@^P^@^@^@^@^@^@^A^@^@^@^F^@^@^@[27m [7m<A0>[27m-[7m^@^@^@^@^@^@<A0>[27m=[7m^@^@^@^@^@^@<A0>[27m=[7m^@^@^@^@^@^@<88>^B^@^@^@^@^@^@[27m([7m^C^@^@^@^@^@^@^@^P^@^@^@^@^@^@^B^@^@^@^F^@^@^@<B0>[27m-[7m^@^@^@^@^@^@<B0>[27m=[7m^@^@^@^@^@^@<B0>[27m=[7m^@^@^@^@^@^@<F0>^A^@^@[27m [7m^@^@^@^@<F0>^A^@^@^@^@^@^@^H^@^@^@^@^@^@^@^D^@^@^@^D^@^@^@[27m8[7m^C^@^@^@^@^@^@[27m8[7m^C^@^@^@^@^@^@[27m8[7m^C^@^@^@^@^@^@[27m [7m^@^@^@^@^@^@^@[27m [7m^@^@^@^@^@^@^@^H^@^@^@^@^@^@^@^D^@^@^@^D^@^@^@[27mX[7m^C^@^@^@^@^[27m [7m^@^@[27mX[7m^C^@^@^@^@^@^@[27mX[7m^C^@^@^@^@^@^@[27mD[7m^@^@^@^@^@^@^@[27mD[7m^@^@^@^@^@^@^@^D^@^@^@^@^@^@^@[27mS[7m<E5>[27mtd[7m^D^@^@^@[27m8[7m^C^@^@^@^@^@^@[27m8[7m^C^@^@^@^@^@^@[27m8[7m^C^@^@^@^@^@^@[27m [7m^@^@^@^@^@^@^@[27m [7m^@^@^@^@^@^@^@^H^@^@^[27m [7m^@^@^@^@^@[27mP[7m<E5>[27mtd[7m^D^@^@^@<80>[27m [7m^@^@^@^@^@^@<80>[27m [7m^@^@^@^@^@^@<80>[27m [7m^@^@^@^@^@^@[27mD[7m^@^@^@^@^@^@^@[27mD[7m^@^@^@^@^@^@^@^D^@^@^@^@^@^@^@[27mQ[7m<E5>[27mtd[7m^F^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[27m [7m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^P^@^@^@^@^@^@^@[27mR[7m<E5>[27mtd[7m^D^@^@^@<A0>[27m-[7m^@^@^@^@^@^@<A0>[27m=[7m^@^@^@^@^@^@<A0>[27m=[7m^@^@^@^@^@^@[27m`[7m^B^@^@^@^@^@^@[27m`[7m^B^@^@^@^@^@^@^A^@^@^@^@^@^@^@[27m/lib64/ld -linux-x86-64.so.2[7m^@^@^@^@^@^D^@^@^@^P^@^@^@^E^@^@^@[27mGNU[7m^@^B^@^@<C0>^D^@^@^@^C^@^@^@^@^@^@^@^D^@^@^@^T^@^@^@^C^@^@^@[27mGNU[7m^@^X<BF>ESC[27m5[7m^W<A3>[27m/[7m<B3>[27mX[7m<8C>^L[27m$n[7m<C2>[27m:[7m<BD>[27m2[7m<84><9E><87>^D^@^[27m [7m^@^@^P^@^@^@^A^@^@^@[27mGNU[7m^@^@^@^@^@^C^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^B^@^@^@[27m       [7m^@^@^@^A^@^@^@^F^@^@^@^@^@<81>^@^@^@^@^@[27m        [7m^@^@^@^@^@^@^@<D1>[27me[7m<CE>[27mm[7m^@^@^@^@^@^@^@^@^@^@^@^@^[27m [7m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[27mP[7m^@^@^@[27m [7m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[27m>[7m^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^Q^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^X^@[27m [7m^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[27m,[7m^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[27ml[7m^@^@^@[27m [7m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[27m{[7m^@^@^@[27m [7m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[27m [7m^@^@^@^K^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^]^@^@^@[27m"[7m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[27mlibc.so.6[7m^@[27mexecl[7m^@[27mstrlen[7m^@[27mread[7m^@[27m__cxa_finalize[7m^@[27m__libc_start_main[7m^@[27mwrite[7m^@[27m GLIBC_2.2.5[7m^@[27m_ITM_deregisterTMCloneTable[7m^@[27m__gmon_start__[7m^@[27m_ITM_registerTMCloneTable[7m^@^@^@^@^@^@^B^@^B^@^B^@^B^@^@^@^@^@^B^@^B^@^@^@^@^@^@^@^A^@^A^@^A^@^@^@^P^@^@^@^@^@^@^@[27mu[7m^Z[27mi [7m^[27m [7m^@^@^B^@[27mD[7m^@^@^@^@^@^@^@<A0>[27m=[7m^@^@^@^@^@^@^H^@^@^@^@^@^@^@<A0>^Q^@^@^@^@^@^@<A8>[27m=[7m^@^@^@^@^@^@^H^@^@^@^@^@^@^@[27m`[7m^Q^@^@^@^@^@^@^H[27m@[7m^@^@^@^@^@^@^H^@^@^@^@^@^@^@^H[27m@[7m^@^@^@^@^@^@^P[27m@[7m^@^@^@[27m [7m^@^@^@^H^@^@^@^@^@^@^@^H[27m [7m^@^@^@^@^@^@^X[27m@[7m^@^@^@^@^@^@^H^@^@^@^@^@^@^@[27m  [7m^@^@^@^@^@^@[27m @[7m^@^@^@^@^@^@^H^@^@^@^@^@^@^@[27mT [7m^@^@^@^@^@^@<D8>[27m?[7m^@^@^@^@^@^@^F^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@<E[27m [7m<E0>[27m?[7m^@^@^@^@^@^@^F^@^@^@^E^@^@^@^@^@^@^@^@^@^@^@<E8>[27m?[7m^@^@^@^@^@^@^F^@^@^@^F^@^@^@^@^@^@^@^@^@^@^@<F0>[27m?[7m^@^@^@^@^@^@^F^@^@^@^G^@^@^@^@^@^@^@^@^@^@^@<F8>[27m?[7m^@^@^@^@^@^@^F^@^@^@[27m    [7m^[27m [7m^@^@^@^@^@^@^@^@^@^@^@<B8>[27m?[7m^@^@^@^@^@^@^G^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@<C0>[27m?[7m^@^@^@^@^@^@^G^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@<C8>[27m?[7m^@^@^@^@^@^@^G^@^@^@^D^@^@^@^@^@^@^@^@^@^@^@<D0>[27m?[7m^@^[27m [7m^@^@^@^@^@^G^@^@^@^H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^[27m [7m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^[27m [7m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^[27m [7msyscalls[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ less syscalls.c
+[?2004l[?1049h[22;0;0t[?1h=#include <string.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+#define MAX_SIZE 100
+
+char buffer[MAX_SIZE];
+char *msg1 = "Leyendo por stdin: ";
+char *msg2 = "Escribiendo en stderr los datos leidos por stdin : ";
+char *msg3 = "Ahora voy a ejecutar 'ls /'\n";
+
+int main(void) {
+    write(1,msg1, strlen(msg1));       // write msg1 to stdout
+    read(0,buffer, MAX_SIZE);          // read from stdin
+    write(1,msg2, strlen(msg2));       // write msg2 to stdout
+    write(2,buffer, strlen(buffer));   // write data read from stdin to stderr
+    write(1,msg3, strlen(msg3));       // write msg3 to stdout
+    execl("/bin/ls", "ls", "/",NULL);  // execute program 'ls'
+}
+[7msyscalls.c (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+#include <string.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+#define MAX_SIZE 100
+
+char buffer[MAX_SIZE];
+char *msg1 = "Leyendo por stdin: ";
+char *msg2 = "Escribiendo en stderr los datos leidos por stdin : ";
+char *msg3 = "Ahora voy a ejecutar 'ls /'\n";
+
+int main(void) {
+    write(1,msg1, strlen(msg1));       // write msg1 to stdout
+    read(0,buffer, MAX_SIZE);          // read from stdin
+    write(1,msg2, strlen(msg2));       // write msg2 to stdout
+    write(2,buffer, strlen(buffer));   // write data read from stdin to stderr
+    write(1,msg3, strlen(msg3));       // write msg3 to stdout
+    execl("/bin/ls", "ls", "/",NULL);  // execute program 'ls'
+}
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ cat syscalls.c
+[?2004l#include <string.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+#define MAX_SIZE 100
+
+char buffer[MAX_SIZE];
+char *msg1 = "Leyendo por stdin: ";
+char *msg2 = "Escribiendo en stderr los datos leidos por stdin : ";
+char *msg3 = "Ahora voy a ejecutar 'ls /'\n";
+
+int main(void) {
+    write(1,msg1, strlen(msg1));       // write msg1 to stdout
+    read(0,buffer, MAX_SIZE);          // read from stdin
+    write(1,msg2, strlen(msg2));       // write msg2 to stdout
+    write(2,buffer, strlen(buffer));   // write data read from stdin to stderr
+    write(1,msg3, strlen(msg3));       // write msg3 to stdout
+    execl("/bin/ls", "ls", "/",NULL);  // execute program 'ls'
+}
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#linea para escribir por salida de error write(2,buffer, strlen(buffer))[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#linea para escribir por salida de error write(2,buffer, strlen(buffer))
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#linea para escribir por salida de error write(2,buffer, strlen(buffer))[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P#linea para escribir por salida de error write(2,buffer, strlen(buffer)[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m#línea para leer de la salidas estándar read(0,buffer, MAX_SIZE);[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#línea para leer de la salidas estándar read(0,buffer, MAX_SIZE);
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#se estará ejecut#en la primera llamada a execve se estrá ejecutando el código del programa ls[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#se estará ejecut#en la primera llamada a execve se estrá ejecutando el código del programa ls
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#el código del programa para la salida estándar, la pantalla[27m#el código del programa para la salida estándar, la pantalla
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m######EJERCICIO 6######[27m######EJERCICIO 6######
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./fileio[27m./fileio
+[?2004lCreando fichero 'hello_fileio.txt' (será truncado si existe)
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mless hello_fileio.txt[27mless hello_fileio.txt
+[?2004l[?1049h[22;0;0t[?1h=¡Hola, mundo!
+[7mhello_fileio.txt (END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#el fichero creado es hello_fileio.txt y el contenido es ¡Hola, mundo![27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#el fichero creado es hello_fileio.txt y el contenido es ¡Hola, mundo!
+[A
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mstrace --trace=reexit[27mstrace --trace=reexit
+[?2004lstrace: invalid system call 'reexit'
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ EXIT[K[K[K[Kstrace --trace=reexit[K[K[K[K[K
+[?2004lstrace: invalid system call 'r'
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ strace --trace=r[K[K[KE
+[?2004lstrace: unrecognized option '--tracE'
+Try 'strace -h' for more information.
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ strace --tracE[K[K[K[K[K[K[K[K[K[K[K[K[K[KEXO[K[K[Kexit
+[?2004lexit
+
+Script done on 2023-01-02 21:46:17+01:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2023-01-02 21:46:32+01:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="177" LINES="23"]
+[?2004h]0;javihernandezr@jabox: ~[01;32mjavihernandezr@jabox[00m:[01;34m~[00m$ exitstrace --tracEe=reexit#el fichero creado es hello_fileio.txt y el contenido es ¡Hola, mundo![C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cless hello_fileio.txt[K[13P./fileio######EJERCICIO 6######el código del programa para la salida estándar, la pantalla[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cse estará ejecut#en la primera llamada a execve se estrá ejecutando el código del programa ls[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[29Plínea para leer de la salidas estándar read(0,buffer, MAX_SIZE);[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cinea para escribir por salida de error write(2,buffer, strlen(buffer))[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat syscalls.c[K[1@less[C[C[C[C[C[C[C[C[C[C[C[K[3P./syscallschmod 777 syscallsls -l[K[KLSstrace ./syscals# Lee la entrada estandar y escribe la salida de error[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cless syscalls.c[K[5P./syscallspkill 4673 2[C4673/proc/grep Stateg[7Ppgrep busyidlemap -px $(pgrep idle)./idle[Kless busy.c ststuatusidle[C[C[C[C[C[C[C[C[C[C[C[C[10Pbusy.cidle.cgrep State switch/proc/{4672,4673}/status 7070,7071[C[C[C[C[C[C[C[C[C[7P/proc/{4672,4673}/status[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18P./idle & ./busy &########EJERCICIO 4#######[4P No hay nada que leer[12P./vaddress#la direccion de l corresponde a la variable del programa que es -1 y se encuentra en una direccion distinta ya que corresponde a la funcion libreria del programa y g corresponde a la funcion ejecutable del programa[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat vaddress.c[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#El programa escribe ya que l tiene permisos de escritura[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./vaddress[K# como podemos ver al abrir el codigo de vaddress.c la direccion de i corresponde a una instruccion no permitida[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cless vaddress.c[K[5P./vaddress# NO tiene permisos de ejecución[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./vaddress[K# No tiene permisos[9P./vaddress# NO deja leerlo pq no tiene permisos de escritura[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./vaddress[K# p se almacena en el fichero de la biblioteca del sistema mientras que f corresponden al fichero ejecutable del sistema[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[70Pf corresponde a la funcion librería del programa[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./vaddress[K#en esa direccionrma de f, como podemos ver, está el código ejecutable del prog[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./vaddress[K#######EJERCICIO 3######fg[K ./vaddress[K# f y g corresponisos de ejecucion y lectura será el código/instrucciones del programa y g al tenes globales, es decir, los datos que utiliza el programa [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CP se encuentra en una biblioteca[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl tiene permisos de lectura y escritura[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pg[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C p esta en 00007faa80e44000 y tiene permisos de lectura y ejecución[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Pf tiene permisos de lectura y ejecucion[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp se ubica en el área de memoria 00005606fbb5a000[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl se ubica en el área de memoria 00007ffdd2ce8000[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pg se ubica en el área de memoria 00005606fbb5a000[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cf se ubica en el área de memoria 00005606fbb57000 [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[33P3683:   ./vaddresspmap -px $(pgrep vaddress)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pcat /proc/3683/maps6796/maps[9P./vaddressls[Kcd Descargas/FicherosBoletinPractica6/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pls Descargas/cd Descargas/FicherosBoletinPractica6/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#el tamaño que hay en la memoria total del sistema es de 5962016 kB[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[37Pcat /proc/meminfo | grep "Mem"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C# El tamaño de la dirección fisica es de 39 bits y 48 el de la virtual[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[24Pl bloque de cache es de 64 Bytes[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22PHay un solo procesadorcat /proc/cpuinfo | grep "cpu cores"[K########EJERCICIO 1#######[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kunzip FicherosBoletinPractica6.zip [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pcd Descargas/[6Pjupytercat tokenls[Kcdgit pushcommit -m "Borrando para ordenar"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Padd typescript-pract2 commit -m "Borrando para ordenar"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush[Kcd[Klscat token[2Pjupytercd Descargas/unzip FicherosBoletinPractica6.zip [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K########EJERCICIO 1#######[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcat /proc/cpuinfo | grep "cpu cores"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12P# Hay un solo procesadorEl tamaño del bloque de cache es de 64 Bytes la dirección fisica es de 39 bits y 48 el de la virtual[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[40Pcat /proc/meminfo | grep "Mem"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#el tamaño que hay en la memoria total del sistema es de 5962016 kB[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[29Pcd Descargas/FicherosBoletinPractica6/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pls Descargas/cd Descargas/FicherosBoletinPractica6/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pls Descargas/cd Descargas/FicherosBoletinPractica6/
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./fileio[27m./fileio
+[?2004lCreando fichero 'hello_fileio.txt' (será truncado si existe)
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mstrace --trace=read,write,openat,close -o output_fileio.strace ./fileio[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstrace --trace=read,write,openat,close -o output_fileio.strace ./fileio
+[?2004lCreando fichero 'hello_fileio.txt' (será truncado si existe)
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mstrace -o fichero_traza ./syscalls[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstrace -o fichero_traza ./syscalls
+[A
+[?2004lLeyendo por stdin: 
+Escribiendo en stderr los datos leidos por stdin : 
+Ahora voy a ejecutar 'ls /'
+bin  boot  cdrom  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media	mnt  opt  proc	root  run  sbin  snap  srv  swapfile  sys  tmp	usr  var
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#la llamada al fichero para devolver el descriptor de fichero es openat(AT_FDCWD, "hello_fileio.openat(AT_FDCWD, "hell[27m[7mo[27m[7m_fileio.txt", O_RDWR|O_CREAT|O_TRUNC, 0666) = 3[27m[A]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ #la llamada al fichero para devolver el descriptor de fichero es openat(AT_FDCWD, "hello_fileio.openat(AT_FDCWD, "hello_fileio.txt", O_RDWR|O_CREAT|O_TRUNC, 0666) = 3
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#la llamada al sistema en caso de error devuelve el valor -1[27m#la llamada al sistema en caso de error devuelve el valor -1
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mless output_fileio.strace[27mless output_fileio.strace
+[?2004l[?1049h[22;0;0t[?1h=openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+close(3)                                = 0
+write(1, "Creando fichero 'hello_fileio.tx"..., 62) = 62
+openat(AT_FDCWD, "noexiste", O_RDONLY)  = -1 ENOENT (No existe el archivo o el directorio)
+openat(AT_FDCWD, "hello_fileio.txt", O_RDWR|O_CREAT|O_TRUNC, 0666) = 3
+write(3, "\302\241Hola, mundo!\n", 15)  = 15
+close(3)                                = 0
++++ exited with 0 +++
+[7moutput_fileio.strace (END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ less output_fileio.strace[1P output_fileio.strace[1P output_fileio.strace[1P output_fileio.strace[1P output_fileio.stracec output_fileio.stracea output_fileio.stracet output_fileio.strace
+[?2004lopenat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+close(3)                                = 0
+write(1, "Creando fichero 'hello_fileio.tx"..., 62) = 62
+openat(AT_FDCWD, "noexiste", O_RDONLY)  = -1 ENOENT (No existe el archivo o el directorio)
+openat(AT_FDCWD, "hello_fileio.txt", O_RDWR|O_CREAT|O_TRUNC, 0666) = 3
+write(3, "\302\241Hola, mundo!\n", 15)  = 15
+close(3)                                = 0
++++ exited with 0 +++
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m# la funcion fpria funcion fprintf invoca a write ("hola mundo)[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C# la funcion fpria funcion fprintf invoca a write ("hola mundo)
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#la funcion fp invoca opensat[27m#la funcion fp invoca opensat
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#la funcion fp invoca openat[27m#la funcion fp invoca openat
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#la funcion fclose invoca a close[27m#la funcion fclose invoca a close
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m ####EJERCICIO 7#####[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ####EJERCICIO 7#####
+[A
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mfor i in $(seq -w 1 20) ; do echo "Line $i"; done > input_openfiles.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq -w 1 20) ; do echo "Line $i"; done > input_openfiles.txt
+[A
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mcat input_openfiles[27mcat input_openfiles
+[?2004lcat: input_openfiles: No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ cat input_openfiles.txt
+[?2004lLine 01
+Line 02
+Line 03
+Line 04
+Line 05
+Line 06
+Line 07
+Line 08
+Line 09
+Line 10
+Line 11
+Line 12
+Line 13
+Line 14
+Line 15
+Line 16
+Line 17
+Line 18
+Line 19
+Line 20
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./openfiles[27m./openfiles
+[?2004lPulsa INTRO para continuar..
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m./openfiles output_openfiles[27m./openfiles output_openfiles
+[?2004lPulsa INTRO para continuar..
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mless output_openfiles.txt[27mless output_openfiles.txt
+[?2004l[?1049h[22;0;0t[?1h=Line 01
+Line 11
+Line 02
+Line 12
+Line 03
+Line 13
+Line 04
+Line 14
+Line 05
+Line 15
+Line 06
+Line 16
+Line 07
+Line 17
+Line 08
+Line 18
+Line 09
+Line 19
+Line 10
+Line 20
+[7moutput_openfiles.txt (END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mcat output_openfiles.txt [27mcat output_openfiles.txt 
+[?2004lLine 01
+Line 11
+Line 02
+Line 12
+Line 03
+Line 13
+Line 04
+Line 14
+Line 05
+Line 15
+Line 06
+Line 16
+Line 07
+Line 17
+Line 08
+Line 18
+Line 09
+Line 19
+Line 10
+Line 20
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m ./openfiles[27m ./openfiles
+[?2004lPulsa INTRO para continuar..^Z
+[1]+  Detenido                ./openfiles
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mpgrep openfiles[27mpgrep openfiles
+[?2004l5067
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mls -l /proc/7838/fd[27mls -l /proc/7838/fd
+[?2004lls: no se puede acceder a '/proc/7838/fd': No existe el archivo o el directorio
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ ls -l /proc/7838/fd[1P/fd[1P/fd[1P/fd[1P/fd5/fd0/fd6/fd7/fd
+[?2004ltotal 0
+lrwx------ 1 javihernandezr javihernandezr 64 ene  2 21:53 [0m[01;36m0[0m -> [40;33;01m/dev/pts/3[0m
+lrwx------ 1 javihernandezr javihernandezr 64 ene  2 21:53 [01;36m1[0m -> [40;33;01m/dev/pts/3[0m
+lrwx------ 1 javihernandezr javihernandezr 64 ene  2 21:53 [01;36m2[0m -> [40;33;01m/dev/pts/3[0m
+lr-x------ 1 javihernandezr javihernandezr 64 ene  2 21:53 [01;36m3[0m -> /home/javihernandezr/Descargas/FicherosBoletinPractica6/input_openfiles.txt
+lr-x------ 1 javihernandezr javihernandezr 64 ene  2 21:53 [01;36m4[0m -> /home/javihernandezr/Descargas/FicherosBoletinPractica6/input_openfiles.txt
+lrwx------ 1 javihernandezr javihernandezr 64 ene  2 21:53 [01;36m5[0m -> /home/javihernandezr/Descargas/FicherosBoletinPractica6/output_openfiles.txt
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mless openfiles.c[27mless openfiles.c
+[?2004l[?1049h[22;0;0t[?1h=#include <assert.h>
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/stat.h>
+
+const  char *input_filename = "input_openfiles.txt";
+const  char *output_filename = "output_openfiles.txt";
+
+int main (void) {
+    // Abrir fichero de entrada
+    FILE * filein_mitad = fopen (input_filename, "r");
+    assert(filein_mitad != NULL);
+    if (filein_mitad == NULL) {
+        fprintf(stderr,"Error al abrir el fichero %s\n", input_filename);
+        exit(-1);
+    }
+    // Abrir fichero de entrada nuevamente (diferente puntero)
+    FILE * filein_inicio = fopen (input_filename, "r");
+    assert(filein_inicio != NULL);
+
+[7mopenfiles.c[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#abre dos veces eless openfiles.c[27m#abre dos veces eless openfiles.c
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m#abre dos veces el mismo ficherp[27m#abre dos veces el mismo ficherp
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mlsof input_openfiles[27mlsof input_openfiles
+[?2004llsof: status error on input_openfiles: No such file or directory
+lsof 4.93.2
+ latest revision: https://github.com/lsof-org/lsof
+ latest FAQ: https://github.com/lsof-org/lsof/blob/master/00FAQ
+ latest (non-formatted) man page: https://github.com/lsof-org/lsof/blob/master/Lsof.8
+ usage: [-?abhKlnNoOPRtUvVX] [+|-c c] [+|-d s] [+D D] [+|-E] [+|-e s] [+|-f[gG]]
+ [-F [f]] [-g [s]] [-i [i]] [+|-L [l]] [+m [m]] [+|-M] [-o [o]] [-p s]
+ [+|-r [t]] [-s [p:s]] [-S [t]] [-T [t]] [-u s] [+|-w] [-x [fl]] [--] [names]
+Use the ``-h'' option to get more help information.
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mlsof input_openfiles.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clsof input_openfiles.txt
+[A
+[?2004lCOMMAND    PID           USER   FD   TYPE DEVICE SIZE/OFF    NODE NAME
+openfiles 5067 javihernandezr    3r   REG    8,3      160 1184092 input_openfiles.txt
+openfiles 5067 javihernandezr    4r   REG    8,3      160 1184092 input_openfiles.txt
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m #el proceso 3 y 4[27m #el proceso 3 y 4
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mlsof | grep openfiles[27mlsof | grep openfiles
+[?2004l^Z
+[2]+  Detenido                lsof | grep --color=auto openfiles
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ lsof | grep openfiles
+[?2004l^Z
+[3]+  Detenido                lsof | grep --color=auto openfiles
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7m######EJERCICIO 8#######[27m######EJERCICIO 8#######
+[?2004l[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mlspci -v[27mlspci -v
+[?2004l00:00.0 Host bridge: Intel Corporation 440FX - 82441FX PMC [Natoma] (rev 02)
+	Flags: fast devsel
+
+00:01.0 ISA bridge: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II]
+	Flags: bus master, medium devsel, latency 0
+
+00:01.1 IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01) (prog-if 8a [ISA Compatibility mode controller, supports both channels switched to PCI native mode, supports bus mastering])
+	Flags: bus master, fast devsel, latency 64
+	Memory at 000001f0 (32-bit, non-prefetchable) [virtual] [size=8]
+	Memory at 000003f0 (type 3, non-prefetchable) [virtual]
+	Memory at 00000170 (32-bit, non-prefetchable) [virtual] [size=8]
+	Memory at 00000370 (type 3, non-prefetchable) [virtual]
+	I/O ports at d000 [virtual] [size=16]
+	Kernel driver in use: ata_piix
+	Kernel modules: pata_acpi
+
+00:02.0 VGA compatible controller: VMware SVGA II Adapter (prog-if 00 [VGA controller])
+	Subsystem: VMware SVGA II Adapter
+	Flags: bus master, fast devsel, latency 64, IRQ 18
+	I/O ports at d010 [size=16]
+	Memory at e0000000 (32-bit, prefetchable) [size=16M]
+	Memory at f0000000 (32-bit, non-prefetchable) [size=2M]
+	Expansion ROM at 000c0000 [virtual] [disabled] [size=128K]
+	Kernel driver in use: vmwgfx
+	Kernel modules: vmwgfx
+
+00:03.0 Ethernet controller: Intel Corporation 82540EM Gigabit Ethernet Controller (rev 02)
+	Subsystem: Intel Corporation PRO/1000 MT Desktop Adapter
+	Flags: bus master, 66MHz, medium devsel, latency 64, IRQ 19
+	Memory at f0200000 (32-bit, non-prefetchable) [size=128K]
+	I/O ports at d020 [size=8]
+	Capabilities: <access denied>
+	Kernel driver in use: e1000
+	Kernel modules: e1000
+
+00:04.0 System peripheral: InnoTek Systemberatung GmbH VirtualBox Guest Service
+	Flags: fast devsel, IRQ 20
+	I/O ports at d040 [size=32]
+	Memory at f0400000 (32-bit, non-prefetchable) [size=4M]
+	Memory at f0800000 (32-bit, prefetchable) [size=16K]
+	Kernel driver in use: vboxguest
+	Kernel modules: vboxguest
+
+00:05.0 Multimedia audio controller: Intel Corporation 82801AA AC'97 Audio Controller (rev 01)
+	Subsystem: Dell 82801AA AC'97 Audio Controller
+	Flags: bus master, medium devsel, latency 64, IRQ 21
+	I/O ports at d100 [size=256]
+	I/O ports at d200 [size=64]
+	Kernel driver in use: snd_intel8x0
+	Kernel modules: snd_intel8x0
+
+00:06.0 USB controller: Apple Inc. KeyLargo/Intrepid USB (prog-if 10 [OHCI])
+	Flags: bus master, fast devsel, latency 64, IRQ 22
+	Memory at f0804000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: ohci-pci
+
+00:07.0 Bridge: Intel Corporation 82371AB/EB/MB PIIX4 ACPI (rev 08)
+	Flags: medium devsel, IRQ 9
+	Kernel driver in use: piix4_smbus
+	Kernel modules: i2c_piix4
+
+00:0d.0 SATA controller: Intel Corporation 82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode] (rev 02) (prog-if 01 [AHCI 1.0])
+	Flags: bus master, fast devsel, latency 64, IRQ 21
+	I/O ports at d240 [size=8]
+	I/O ports at d248 [size=4]
+	I/O ports at d250 [size=8]
+	I/O ports at d258 [size=4]
+	I/O ports at d260 [size=16]
+	Memory at f0806000 (32-bit, non-prefetchable) [size=8K]
+	Capabilities: <access denied>
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mlspci -v /proc/interrupts[27mlspci -v /proc/interrupts
+[?2004lUsage: lspci [<switches>]
+
+Basic display modes:
+-mm		Produce machine-readable output (single -m for an obsolete format)
+-t		Show bus tree
+
+Display options:
+-v		Be verbose (-vv or -vvv for higher verbosity)
+-k		Show kernel drivers handling each device
+-x		Show hex-dump of the standard part of the config space
+-xxx		Show hex-dump of the whole config space (dangerous; root only)
+-xxxx		Show hex-dump of the 4096-byte extended config space (root only)
+-b		Bus-centric view (addresses and IRQ's as seen by the bus)
+-D		Always show domain numbers
+-P		Display bridge path in addition to bus and device number
+-PP		Display bus path in addition to bus and device number
+
+Resolving of device ID's to names:
+-n		Show numeric ID's
+-nn		Show both textual and numeric ID's (names & numbers)
+-q		Query the PCI ID database for unknown ID's via DNS
+-qq		As above, but re-query locally cached entries
+-Q		Query the PCI ID database for all ID's via DNS
+
+Selection of devices:
+-s [[[[<domain>]:]<bus>]:][<slot>][.[<func>]]	Show only devices in selected slots
+-d [<vendor>]:[<device>][:<class>]		Show only devices with specified ID's
+
+Other options:
+-i <file>	Use specified ID database instead of /usr/share/misc/pci.ids.gz
+-p <file>	Look up kernel modules in a given file instead of default modules.pcimap
+-M		Enable `bus mapping' mode (dangerous; root only)
+
+PCI access options:
+-A <method>	Use the specified PCI access method (see `-A help' for a list)
+-O <par>=<val>	Set PCI access parameter (see `-O help' for a list)
+-G		Enable PCI access debugging
+-H <mode>	Use direct hardware access (<mode> = 1 or 2)
+-F <file>	Read PCI configuration dump from a given file
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mlspci -v /proc/in[27mlspci -v /proc/in
+[?2004lUsage: lspci [<switches>]
+
+Basic display modes:
+-mm		Produce machine-readable output (single -m for an obsolete format)
+-t		Show bus tree
+
+Display options:
+-v		Be verbose (-vv or -vvv for higher verbosity)
+-k		Show kernel drivers handling each device
+-x		Show hex-dump of the standard part of the config space
+-xxx		Show hex-dump of the whole config space (dangerous; root only)
+-xxxx		Show hex-dump of the 4096-byte extended config space (root only)
+-b		Bus-centric view (addresses and IRQ's as seen by the bus)
+-D		Always show domain numbers
+-P		Display bridge path in addition to bus and device number
+-PP		Display bus path in addition to bus and device number
+
+Resolving of device ID's to names:
+-n		Show numeric ID's
+-nn		Show both textual and numeric ID's (names & numbers)
+-q		Query the PCI ID database for unknown ID's via DNS
+-qq		As above, but re-query locally cached entries
+-Q		Query the PCI ID database for all ID's via DNS
+
+Selection of devices:
+-s [[[[<domain>]:]<bus>]:][<slot>][.[<func>]]	Show only devices in selected slots
+-d [<vendor>]:[<device>][:<class>]		Show only devices with specified ID's
+
+Other options:
+-i <file>	Use specified ID database instead of /usr/share/misc/pci.ids.gz
+-p <file>	Look up kernel modules in a given file instead of default modules.pcimap
+-M		Enable `bus mapping' mode (dangerous; root only)
+
+PCI access options:
+-A <method>	Use the specified PCI access method (see `-A help' for a list)
+-O <par>=<val>	Set PCI access parameter (see `-O help' for a list)
+-G		Enable PCI access debugging
+-H <mode>	Use direct hardware access (<mode> = 1 or 2)
+-F <file>	Read PCI configuration dump from a given file
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mlspci -v /proc/in[27mlspci -v /proc/in
+[?2004lUsage: lspci [<switches>]
+
+Basic display modes:
+-mm		Produce machine-readable output (single -m for an obsolete format)
+-t		Show bus tree
+
+Display options:
+-v		Be verbose (-vv or -vvv for higher verbosity)
+-k		Show kernel drivers handling each device
+-x		Show hex-dump of the standard part of the config space
+-xxx		Show hex-dump of the whole config space (dangerous; root only)
+-xxxx		Show hex-dump of the 4096-byte extended config space (root only)
+-b		Bus-centric view (addresses and IRQ's as seen by the bus)
+-D		Always show domain numbers
+-P		Display bridge path in addition to bus and device number
+-PP		Display bus path in addition to bus and device number
+
+Resolving of device ID's to names:
+-n		Show numeric ID's
+-nn		Show both textual and numeric ID's (names & numbers)
+-q		Query the PCI ID database for unknown ID's via DNS
+-qq		As above, but re-query locally cached entries
+-Q		Query the PCI ID database for all ID's via DNS
+
+Selection of devices:
+-s [[[[<domain>]:]<bus>]:][<slot>][.[<func>]]	Show only devices in selected slots
+-d [<vendor>]:[<device>][:<class>]		Show only devices with specified ID's
+
+Other options:
+-i <file>	Use specified ID database instead of /usr/share/misc/pci.ids.gz
+-p <file>	Look up kernel modules in a given file instead of default modules.pcimap
+-M		Enable `bus mapping' mode (dangerous; root only)
+
+PCI access options:
+-A <method>	Use the specified PCI access method (see `-A help' for a list)
+-O <par>=<val>	Set PCI access parameter (see `-O help' for a list)
+-G		Enable PCI access debugging
+-H <mode>	Use direct hardware access (<mode> = 1 or 2)
+-F <file>	Read PCI configuration dump from a given file
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mless /proc/interrupts[27mless /proc/interrupts
+[?2004l[?1049h[22;0;0t[?1h=           CPU0       
+  0:         33   IO-APIC   2-edge      timer
+  1:      11680   IO-APIC   1-edge      i8042
+  8:          0   IO-APIC   8-edge      rtc0
+  9:          0   IO-APIC   9-fasteoi   acpi
+ 12:      14838   IO-APIC  12-edge      i8042
+ 14:          0   IO-APIC  14-edge      ata_piix
+ 15:       7254   IO-APIC  15-edge      ata_piix
+ 18:      39837   IO-APIC  18-fasteoi   vmwgfx
+ 19:      39473   IO-APIC  19-fasteoi   enp0s3
+ 20:     104972   IO-APIC  20-fasteoi   vboxguest
+ 21:      96991   IO-APIC  21-fasteoi   ahci[0000:00:0d.0], snd_intel8x0
+ 22:         26   IO-APIC  22-fasteoi   ohci_hcd:usb1
+NMI:          0   Non-maskable interrupts
+LOC:    3680981   Local timer interrupts
+SPU:          0   Spurious interrupts
+PMI:          0   Performance monitoring interrupts
+IWI:          0   IRQ work interrupts
+RTR:          0   APIC ICR read retries
+RES:          0   Rescheduling interrupts
+CAL:          0   Function call interrupts
+TLB:          0   TLB shootdowns
+[7m/proc/interrupts[27m[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[KTRM:          0   Thermal event interrupts
+:[K[K [KESCESC[KOO[KBB[KTHR:          0   Threshold APIC interrupts
+:[K[K [KESCESC[KOO[KBB[KDFR:          0   Deferred Error APIC interrupts
+:[K[K [KESCESC[KOO[KBB[KMCE:          0   Machine check exceptions
+:[K[K [KESCESC[KOO[KBB[KMCP:         24   Machine check polls
+:[K[K [KESCESC[KOO[KBB[KERR:          0
+:[K[K [KESCESC[KOO[KBB[KMIS:          0
+:[K[K [KESCESC[KOO[KBB[KPIN:          0   Posted-interrupt notification event
+:[K[K [KESCESC[KOO[KBB[KNPI:          0   Nested posted-interrupt event
+:[K[K [KESCESC[KOO[KBB[KPIW:          0   Posted-interrupt wakeup event
+:[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[HM 19:      39473   IO-APIC  19-fasteoi   enp0s3
+[23;1H[K:[K[K [KESCESC[KOO[KAA[K[HM 18:      39837   IO-APIC  18-fasteoi   vmwgfx
+[23;1H[K:[K[K [KESCESC[KOO[KAA[K[HM 15:       7254   IO-APIC  15-edge      ata_piix
+[23;1H[K:[K[K [KESCESC[KOO[KAA[K[HM 14:          0   IO-APIC  14-edge      ata_piix
+[23;1H[K:[K[K [KESCESC[KOO[KAA[K[HM 12:      14838   IO-APIC  12-edge      i8042
+[23;1H[K:[K[K [KESCESC[KOO[KAA[K[HM  9:          0   IO-APIC   9-fasteoi   acpi
+[23;1H[K:[K[K [KESCESC[KOO[KAA[K[HM  8:          0   IO-APIC   8-edge      rtc0
+[23;1H[K:[K[K [KESCESC[KOO[KAA[K[HM  1:      11680   IO-APIC   1-edge      i8042
+[23;1H[K:[K[K [KESCESC[KOO[KAA[K[HM  0:         33   IO-APIC   2-edge      timer
+[23;1H[K:[K[K [KESCESC[KOO[KAA[K[HM           CPU0       
+[23;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[KTRM:          0   Thermal event interrupts
+:[K[K [KESCESC[KOO[KBB[KTHR:          0   Threshold APIC interrupts
+:[K[K [KESCESC[KOO[KBB[KDFR:          0   Deferred Error APIC interrupts
+:[K[K [KESCESC[KOO[KBB[KMCE:          0   Machine check exceptions
+:[K[K [KESCESC[KOO[KBB[KMCP:         24   Machine check polls
+:[K[K [KESCESC[KOO[KBB[KERR:          0
+:[K[K [KESCESC[KOO[KBB[KMIS:          0
+:[K[K [KESCESC[KOO[KBB[KPIN:          0   Posted-interrupt notification event
+:[K[K [KESCESC[KOO[KBB[KNPI:          0   Nested posted-interrupt event
+:[K[K [KESCESC[KOO[KBB[KPIW:          0   Posted-interrupt wakeup event
+[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ cat /peo[K[Ke[Kroc/interrupts 
+[?2004l           CPU0       
+  0:         33   IO-APIC   2-edge      timer
+  1:      11724   IO-APIC   1-edge      i8042
+  8:          0   IO-APIC   8-edge      rtc0
+  9:          0   IO-APIC   9-fasteoi   acpi
+ 12:      15054   IO-APIC  12-edge      i8042
+ 14:          0   IO-APIC  14-edge      ata_piix
+ 15:       7272   IO-APIC  15-edge      ata_piix
+ 18:      39933   IO-APIC  18-fasteoi   vmwgfx
+ 19:      39487   IO-APIC  19-fasteoi   enp0s3
+ 20:     105097   IO-APIC  20-fasteoi   vboxguest
+ 21:      97428   IO-APIC  21-fasteoi   ahci[0000:00:0d.0], snd_intel8x0
+ 22:         26   IO-APIC  22-fasteoi   ohci_hcd:usb1
+NMI:          0   Non-maskable interrupts
+LOC:    3688475   Local timer interrupts
+SPU:          0   Spurious interrupts
+PMI:          0   Performance monitoring interrupts
+IWI:          0   IRQ work interrupts
+RTR:          0   APIC ICR read retries
+RES:          0   Rescheduling interrupts
+CAL:          0   Function call interrupts
+TLB:          0   TLB shootdowns
+TRM:          0   Thermal event interrupts
+THR:          0   Threshold APIC interrupts
+DFR:          0   Deferred Error APIC interrupts
+MCE:          0   Machine check exceptions
+MCP:         24   Machine check polls
+ERR:          0
+MIS:          0
+PIN:          0   Posted-interrupt notification event
+NPI:          0   Nested posted-interrupt event
+PIW:          0   Posted-interrupt wakeup event
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mlspci -v␈␈␈␈␈␈␈eslspci scipy -v /proc/interrupts[27mlspci -v␈␈␈␈␈␈␈eslspci scipy -v /proc/interrupts
+[?2004llspci: invalid option -- '�'
+Usage: lspci [<switches>]
+
+Basic display modes:
+-mm		Produce machine-readable output (single -m for an obsolete format)
+-t		Show bus tree
+
+Display options:
+-v		Be verbose (-vv or -vvv for higher verbosity)
+-k		Show kernel drivers handling each device
+-x		Show hex-dump of the standard part of the config space
+-xxx		Show hex-dump of the whole config space (dangerous; root only)
+-xxxx		Show hex-dump of the 4096-byte extended config space (root only)
+-b		Bus-centric view (addresses and IRQ's as seen by the bus)
+-D		Always show domain numbers
+-P		Display bridge path in addition to bus and device number
+-PP		Display bus path in addition to bus and device number
+
+Resolving of device ID's to names:
+-n		Show numeric ID's
+-nn		Show both textual and numeric ID's (names & numbers)
+-q		Query the PCI ID database for unknown ID's via DNS
+-qq		As above, but re-query locally cached entries
+-Q		Query the PCI ID database for all ID's via DNS
+
+Selection of devices:
+-s [[[[<domain>]:]<bus>]:][<slot>][.[<func>]]	Show only devices in selected slots
+-d [<vendor>]:[<device>][:<class>]		Show only devices with specified ID's
+
+Other options:
+-i <file>	Use specified ID database instead of /usr/share/misc/pci.ids.gz
+-p <file>	Look up kernel modules in a given file instead of default modules.pcimap
+-M		Enable `bus mapping' mode (dangerous; root only)
+
+PCI access options:
+-A <method>	Use the specified PCI access method (see `-A help' for a list)
+-O <par>=<val>	Set PCI access parameter (see `-O help' for a list)
+-G		Enable PCI access debugging
+-H <mode>	Use direct hardware access (<mode> = 1 or 2)
+-F <file>	Read PCI configuration dump from a given file
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ [7mlspci scipy -v /pess /proc/interrupts[27mlspci scipy -v /pess /proc/interrupts
+[?2004lUsage: lspci [<switches>]
+
+Basic display modes:
+-mm		Produce machine-readable output (single -m for an obsolete format)
+-t		Show bus tree
+
+Display options:
+-v		Be verbose (-vv or -vvv for higher verbosity)
+-k		Show kernel drivers handling each device
+-x		Show hex-dump of the standard part of the config space
+-xxx		Show hex-dump of the whole config space (dangerous; root only)
+-xxxx		Show hex-dump of the 4096-byte extended config space (root only)
+-b		Bus-centric view (addresses and IRQ's as seen by the bus)
+-D		Always show domain numbers
+-P		Display bridge path in addition to bus and device number
+-PP		Display bus path in addition to bus and device number
+
+Resolving of device ID's to names:
+-n		Show numeric ID's
+-nn		Show both textual and numeric ID's (names & numbers)
+-q		Query the PCI ID database for unknown ID's via DNS
+-qq		As above, but re-query locally cached entries
+-Q		Query the PCI ID database for all ID's via DNS
+
+Selection of devices:
+-s [[[[<domain>]:]<bus>]:][<slot>][.[<func>]]	Show only devices in selected slots
+-d [<vendor>]:[<device>][:<class>]		Show only devices with specified ID's
+
+Other options:
+-i <file>	Use specified ID database instead of /usr/share/misc/pci.ids.gz
+-p <file>	Look up kernel modules in a given file instead of default modules.pcimap
+-M		Enable `bus mapping' mode (dangerous; root only)
+
+PCI access options:
+-A <method>	Use the specified PCI access method (see `-A help' for a list)
+-O <par>=<val>	Set PCI access parameter (see `-O help' for a list)
+-G		Enable PCI access debugging
+-H <mode>	Use direct hardware access (<mode> = 1 or 2)
+-F <file>	Read PCI configuration dump from a given file
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ exit
+[?2004lexit
+Hay trabajos detenidos.
+[?2004h]0;javihernandezr@jabox: ~/Descargas/FicherosBoletinPractica6[01;32mjavihernandezr@jabox[00m:[01;34m~/Descargas/FicherosBoletinPractica6[00m$ exit
+[?2004lexit
+
+Script done on 2023-01-02 21:58:08+01:00 [COMMAND_EXIT_CODE="1"]
